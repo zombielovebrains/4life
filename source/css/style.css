@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
 @media (min-width: 1200px) {
   .main-nav {
     min-height: 100px;
@@ -106,7 +130,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .main-screen__box {
+  .main-screen__flexwrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,7 +167,7 @@
   .main-screen__text {
     font-family: "Lato", arial, sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 55px;
     line-height: 80px;
     text-align: center;
@@ -248,7 +272,7 @@ p {
     background-color: #AAF0D1;
     position: absolute;
     top: 50%;
-    right: 25px;
+    right: 35px;
     margin-top: -9px; }
 
 /*# sourceMappingURL=style.css.map */
