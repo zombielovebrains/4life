@@ -129,7 +129,21 @@
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative;
+    z-index: 1; }
+  .main-screen__parallax {
+    position: absolute;
+    z-index: -1; }
+    .main-screen__parallax--reflexion {
+      right: 0px;
+      top: 88px; }
+    .main-screen__parallax--belle-vi {
+      top: 190px;
+      left: 42px; }
+    .main-screen__parallax--aloe {
+      top: 10px;
+      left: 130px; }
   .main-screen__flexwrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,6 +238,194 @@
   .presentation__button {
     margin-top: 40px; } }
 
+@media (min-width: 1200px) {
+  .products {
+    padding-top: 150px; }
+  .products__header {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 80px;
+    color: #17181A; }
+  .products__flexwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .products__filterset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .products__filter {
+    padding-right: 40px; }
+  .products__link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #17181A;
+    opacity: 0.48; }
+    .products__link--active {
+      opacity: 1; }
+  .products__toggleset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .products__toggle {
+    width: 72px;
+    height: 72px;
+    padding: 0; }
+    .products__toggle--prev {
+      background: transparent url("../img/green-arrow-left.svg") center no-repeat;
+      position: relative;
+      z-index: 1;
+      margin-right: 10px; }
+      .products__toggle--prev::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background: url("../img/arrow-left.svg") center no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        z-index: -1; }
+    .products__toggle--next {
+      background: transparent url("../img/green-arrow-right.svg") center no-repeat;
+      position: relative;
+      z-index: 1;
+      margin-left: 10px; }
+      .products__toggle--next::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background: url("../img/arrow-right.svg") center no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        z-index: -1; }
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 43px; } }
+
+@media (min-width: 1200px) {
+  .product-cart {
+    width: 360px;
+    min-height: 555px;
+    border-radius: 10px;
+    background-color: #F4F9FC;
+    margin: 0; }
+  .product-cart__product {
+    min-height: 340px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    z-index: 1; }
+  .product-cart__hover-elem {
+    position: absolute;
+    top: 18px;
+    z-index: -1;
+    width: 300px;
+    height: 300px; }
+  .product-cart__info {
+    margin: 36px 20px 20px 20px;
+    background-color: #fff;
+    width: 320px;
+    min-height: 160px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 27px; }
+  .product-cart__name {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #17181A;
+    min-height: 56px; }
+  .product-cart__flexwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 15px; }
+  .product-cart__price {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FF689E;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .product-cart__add-btn {
+    min-width: 34px;
+    height: 34px;
+    border: 2px solid #FF689E;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product-cart__add-btn::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: url("../img/plus-pink.svg") center no-repeat; }
+    .product-cart__add-btn--hover {
+      padding-left: 17px;
+      padding-right: 12px;
+      border: none;
+      border-radius: 20px;
+      background-color: #FF689E;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .product-cart__add-btn--hover::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: url("../img/plus-white.svg") center no-repeat;
+        margin-left: 15px; }
+  .product-cart__add-text {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: #fff; } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -253,6 +455,9 @@ p {
 button {
   background-color: transparent;
   border-style: none; }
+
+h2 {
+  margin: 0; }
 
 .container {
   width: 320px;

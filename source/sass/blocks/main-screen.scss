@@ -9,6 +9,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-screen__parallax {
+    position: absolute;
+    z-index: -1;
+
+    &--reflexion{
+      right: 0px;
+      top: 88px;
+    }
+
+    &--belle-vi {
+      top: 190px;
+      left: 42px;
+    }
+
+    &--aloe {
+      top: 10px;
+      left: 130px;
+    }
   }
 
   .main-screen__flexwrap {

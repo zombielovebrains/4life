@@ -28,8 +28,7 @@
           <li class="main-nav__innerbox"><a href="" class="main-nav__item">Доставка</a></li>
           <li class="main-nav__innerbox"><a href="" class="main-nav__item">Контакты</a></li>
           <li class="main-nav__innerbox"><a href="" class="main-nav__item main-nav__item--stroked">Консультация</a></li>
-          <li class="main-nav__innerbox"><a href="" class="main-nav__item main-nav__item--filled">Корзина<span
-                class="main-nav__cart-counter">2</span></a></li>
+          <li class="main-nav__innerbox"><a href="" class="main-nav__item main-nav__item--filled">Корзина<span class="main-nav__cart-counter">2</span></a></li>
         </ul>
       </nav>
     </header>
@@ -41,6 +40,27 @@
           <p class="main-screen__text"><span class="underlined-text">Уникальный</span> природный иммуномодулятор</p>
           <a href="" class="main-screen__button button">Подробнее</a>
         </div>
+        <picture class="main-screen__parallax main-screen__parallax--reflexion">
+          <source media="(min-width: 1200px)"
+            srcset="img/reflexion-desktop@1x.png 1x, img/reflexion-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/reflexion-tablet@1x.png 1x, img/reflexion-tablet@2x.png 2x">
+          <img src="img/reflexion-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-mobile@2x.png 2x">
+        </picture>
+        <picture class="main-screen__parallax main-screen__parallax--belle-vi">
+          <source media="(min-width: 1200px)"
+            srcset="img/belle-vi-desktop@1x.png 1x, img/belle-vi-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/belle-vi-tablet@1x.png 1x, img/belle-vi-tablet@2x.png 2x">
+          <img src="img/belle-vi-mobile@1x.png" alt="Красивое фото" srcset="img/belle-vi-mobile@2x.png 2x">
+        </picture>
+        <picture class="main-screen__parallax main-screen__parallax--aloe">
+          <source media="(min-width: 1200px)"
+            srcset="img/aloe-desktop@1x.png 1x, img/aloe-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/aloe-tablet@1x.png 1x, img/aloe-tablet@2x.png 2x">
+          <img src="img/aloe-mobile@1x.png" alt="Красивое фото" srcset="img/aloe-mobile@2x.png 2x">
+        </picture>
       </section>
       <section class="presentation">
         <div class="container presentation__flexwrap">
@@ -59,7 +79,7 @@
             <button type="button" class="presentation__video-btn"></button>
           </div>
           <div class="presentation__text">
-            <p class="presentation__header">Что такое <span class="underlined-text">ТФ</span>?</p>
+            <h2 class="presentation__header">Что такое <span class="underlined-text">ТФ</span>?</h2>
             <p class="presentation__description">
               ТФ&nbsp;&mdash; это маленькие &laquo;белки&raquo;, точнее, пептиды, которые синтезируются в&nbsp;самом
               организме.
@@ -73,6 +93,88 @@
             </p>
             <a href="" class="presentation__button button">Подробнее</a>
           </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <h2 class="products__header">Продукты<br>компании <span class="underlined-text">4Life</span></h2>
+          <div class="products__flexwrap">
+            <ul class="products__filterset">
+              <li class="products__filter"><a href="" class="products__link products__link--active">Все продукты</a></li>
+              <li class="products__filter"><a href="" class="products__link">Иммунитет</a></li>
+              <li class="products__filter"><a href="" class="products__link">Целенаправленные ТФ</a></li>
+              <li class="products__filter"><a href="" class="products__link">Трансформация тела</a></li>
+            </ul>
+            <ul class="products__toggleset">
+              <li><button type="button" class="products__toggle products__toggle--prev"></button></li>
+              <li><button type="button" class="products__toggle products__toggle--next"></button></li>
+            </ul>
+          </div>
+          <ul class="products__list">
+            <li class="products__item">
+              <figure class="products__cart product-cart">
+                <div class="product-cart__product">
+                  <picture class="product-cart__item">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                  <img src="img/green-circle.svg" alt="" class="product-cart__hover-elem">
+                </div>
+                <figcaption class="product-cart__info">
+                  <p class="product-cart__name">Протеиновый коктейль<br>ПРО-ТФ шоколад</p>
+                  <div class="product-cart__flexwrap">
+                    <p class="product-cart__price">3250 ₽</p>
+                    <button class="product-cart__add-btn"><span class="product-cart__add-text visually-hidden">В корзину</span></button>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="products__item">
+              <figure class="products__cart product-cart">
+                <div class="product-cart__product">
+                  <picture class="product-cart__item">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                  <img src="img/green-circle.svg" alt="" class="product-cart__hover-elem visually-hidden">
+                </div>
+                <figcaption class="product-cart__info">
+                  <p class="product-cart__name">Трансфер фактор<br>Классика</p>
+                  <div class="product-cart__flexwrap">
+                    <p class="product-cart__price">3250 ₽</p>
+                    <button class="product-cart__add-btn product-cart__add-btn--hover"><span class="product-cart__add-text">В корзину</span></button>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="products__item">
+              <figure class="products__cart product-cart">
+                <div class="product-cart__product">
+                  <picture class="product-cart__item">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                  <img src="img/green-circle.svg" alt="" class="product-cart__hover-elem visually-hidden">
+                </div>
+                <figcaption class="product-cart__info">
+                  <p class="product-cart__name">Кардио</p>
+                  <div class="product-cart__flexwrap">
+                    <p class="product-cart__price">3250 ₽</p>
+                    <button class="product-cart__add-btn"><span class="product-cart__add-text visually-hidden">В корзину</span></button>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

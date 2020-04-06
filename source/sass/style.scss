@@ -3,6 +3,8 @@
 @import "blocks/main-nav.scss";
 @import "blocks/main-screen.scss";
 @import "blocks/presentation.scss";
+@import "blocks/products.scss";
+@import "blocks/product-cart.scss";
 
 html {
   box-sizing: border-box;
@@ -36,6 +38,10 @@ p {
 button {
   background-color: transparent;
   border-style: none;
+}
+
+h2 {
+  margin: 0;
 }
 
 .container {
