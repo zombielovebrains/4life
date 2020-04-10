@@ -231,7 +231,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
-    line-height: 75px;
+    line-height: 68px;
     color: #17181A; }
   .presentation__description {
     font-family: "Lato", arial, sans-serif;
@@ -252,7 +252,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
-    line-height: 75px;
+    line-height: 68px;
     color: #17181A; }
   .products__flexwrap {
     display: -webkit-box;
@@ -444,7 +444,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
-    line-height: 75px;
+    line-height: 68px;
     color: #17181A; }
   .iq-boost__diagram {
     margin-top: 59px;
@@ -520,6 +520,8 @@
     min-height: 100px; } }
 
 @media (min-width: 1200px) {
+  .tf-faq__infobox {
+    margin-bottom: 10px; }
   .tf-faq__titlebox {
     width: 1160px;
     min-height: 95px;
@@ -544,7 +546,7 @@
     font-family: "Lato", arial, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #17181A;
     margin-left: 60px; }
