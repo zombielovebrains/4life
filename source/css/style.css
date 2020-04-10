@@ -22,6 +22,12 @@
   font-weight: 700;
   font-style: normal; }
 
+@font-face {
+  font-family: "Nautilus";
+  src: url("../fonts/Nautilus.woff") format("woff"), url("../fonts/Nautilus.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
 @media (min-width: 1200px) {
   .main-nav {
     min-height: 100px;
@@ -224,8 +230,8 @@
     font-family: "Lato", arial, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 55px;
-    line-height: 80px;
+    font-size: 50px;
+    line-height: 75px;
     color: #17181A; }
   .presentation__description {
     font-family: "Lato", arial, sans-serif;
@@ -245,8 +251,8 @@
     font-family: "Lato", arial, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 55px;
-    line-height: 80px;
+    font-size: 50px;
+    line-height: 75px;
     color: #17181A; }
   .products__flexwrap {
     display: -webkit-box;
@@ -425,6 +431,143 @@
     font-size: 15px;
     line-height: 28px;
     color: #fff; } }
+
+@media (min-width: 1200px) {
+  .iq-boost {
+    padding-top: 150px; }
+  .iq-boost__flexwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .iq-boost__header {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: #17181A; }
+  .iq-boost__diagram {
+    margin-top: 59px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
+  .iq-boost__textbox {
+    margin-top: 50px;
+    width: 400px;
+    padding-left: 100px; }
+  .iq-boost__subtitle {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #17181A; }
+  .iq-boost__description {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5B6268; }
+  .iq-boost__button {
+    margin-top: 40px; }
+  .iq-boost__info {
+    margin-top: 60px; } }
+
+@media (min-width: 1200px) {
+  .diagram {
+    width: 760px;
+    min-height: 420px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 1; }
+    .diagram::after {
+      content: "";
+      width: 760px;
+      height: 420px;
+      background-image: url("../img/lines-bg.svg");
+      background-size: cover;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      z-index: -1; }
+  .diagram__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 160px;
+    margin: 0; }
+  .diagram__caption {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5B6268;
+    margin-top: 20px;
+    min-height: 100px; } }
+
+@media (min-width: 1200px) {
+  .tf-faq__titlebox {
+    width: 1160px;
+    min-height: 95px;
+    background-color: #F4F9FC;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 50px; }
+  .tf-faq__name {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #17181A;
+    width: 250px; }
+  .tf-faq__percent {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #17181A;
+    margin-left: 60px; }
+  .tf-faq__button {
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/arrow-btn.svg");
+    margin-left: auto; }
+    .tf-faq__button--active {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  .tf-faq__text {
+    font-family: "Lato", arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5B6268;
+    padding-top: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 53px;
+    background-color: #F4F9FC; } }
 
 html {
   -webkit-box-sizing: border-box;

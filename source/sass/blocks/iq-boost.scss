@@ -1,0 +1,55 @@
+@media (min-width: 1200px) {
+  .iq-boost {
+    padding-top: 150px;
+  }
+
+  .iq-boost__flexwrap {
+    display: flex;
+  }
+
+  .iq-boost__header {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: $fcolor;
+  }
+
+  .iq-boost__diagram {
+    margin-top: 59px;
+    flex-grow: 2;
+  }
+
+  .iq-boost__textbox {
+    margin-top: 50px;
+    width: 400px;
+    padding-left: 100px;
+  }
+
+  .iq-boost__subtitle {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: $fcolor;
+  }
+
+  .iq-boost__description {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray;
+  }
+
+  .iq-boost__button {
+    margin-top: 40px;
+  }
+
+  .iq-boost__info {
+    margin-top: 60px;
+  }
+}

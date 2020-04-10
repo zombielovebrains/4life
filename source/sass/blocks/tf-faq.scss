@@ -1,0 +1,62 @@
+@media (min-width: 1200px) {
+  .tf-faq__titlebox {
+    width: 1160px;
+    min-height: 95px;
+    background-color: $lightgray;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .tf-faq__name {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $fcolor;
+
+    width: 250px;
+  }
+
+  .tf-faq__percent {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $fcolor;
+
+    margin-left: 60px;
+  }
+
+  .tf-faq__button {
+    width: 34px;
+    height: 34px;
+
+    background-image: url("../img/arrow-btn.svg");
+    margin-left: auto;
+
+    &--active {
+      transform: rotate(180deg);
+    }
+  }
+
+  .tf-faq__text {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray;
+
+    padding-top: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 53px;
+
+    background-color: $lightgray;
+  }
+}

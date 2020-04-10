@@ -1,0 +1,43 @@
+@media (min-width: 1200px) {
+  .diagram {
+    width: 760px;
+    min-height: 420px;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      width: 760px;
+      height: 420px;
+      background-image: url("../img/lines-bg.svg");
+      background-size: cover;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  .diagram__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 160px;
+    margin: 0;
+  }
+
+  .diagram__caption {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+
+    margin-top: 20px;
+    min-height: 100px;
+  }
+}
