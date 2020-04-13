@@ -8,6 +8,10 @@
 @import "blocks/iq-boost.scss";
 @import "blocks/diagram.scss";
 @import "blocks/tf-faq.scss";
+@import "blocks/main-business.scss";
+@import "blocks/features.scss";
+@import "blocks/featurebox.scss";
+@import "blocks/footer.scss";
 
 html {
   box-sizing: border-box;
@@ -141,4 +145,19 @@ h2 {
     left: 0;
     z-index: -1;
   }
+
+  &--pink {
+    &::before {
+      background-color: $pink;
+    }
+  }
+}
+
+%header-settings {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: $fcolor;
 }

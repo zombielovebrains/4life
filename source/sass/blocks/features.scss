@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+  .features {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .features__header {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    color: $fcolor;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    flex-basis: 33.3%;
+    margin-top: 60px;
+  }
+}
