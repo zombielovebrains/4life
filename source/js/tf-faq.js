@@ -18,10 +18,10 @@
 
   faqBox.addEventListener("click", function (evt) {
     let target = evt.target;
-    let targetParent = target.closest(".tf-faq__titlebox");
+    let targetBox= target.closest(".tf-faq__infobox").querySelector(".tf-faq__textbox");
 
     if (target.classList.contains("tf-faq__button")) {
-      switchClass(target, targetParent.nextElementSibling);
+      switchClass(target, targetBox);
     }
   });
 })();
