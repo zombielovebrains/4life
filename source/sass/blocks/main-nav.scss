@@ -1,14 +1,23 @@
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .main-nav {
-    min-height: 100px;
+    min-height: 86px;
+    padding: 0 52px;
 
     display: flex;
     align-items: center;
   }
 
+  .main-nav {
+    min-height: 100px;
+    padding: 0 40px;
+  }
+
   .main-nav__list {
+    display: none;
+  }
+
+  .main-nav__buttonbox {
     display: flex;
-    flex-direction: row;
     margin-left: auto;
   }
 
@@ -82,5 +91,100 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    min-height: 100px;
+    padding: 0 40px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .main-nav__buttonbox {
+    margin-left: 0;
+  }
+
+  .main-nav__innerbox {
+    padding: 0 23px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  .main-nav__item {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $fcolor;
+
+    &--stroked {
+      width: 163px;
+      min-height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 2px solid $pink;
+      border-radius: 30px;
+
+      color: $pink;
+    }
+
+    &--filled {
+      width: 109px;
+      min-height: 48px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      border-radius: 30px;
+      background-color: $pink;
+
+      color: #fff;
+    }
+  }
+
+  .main-nav__cart-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    width: 25px;
+    height: 25px;
+    margin-top: -8px;
+    margin-right: -8px;
+    background-color: $green;
+    border-radius: 50%;
+
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $fcolor;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-nav {
+    padding: 0;
   }
 }

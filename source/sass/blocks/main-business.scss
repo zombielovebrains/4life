@@ -4,11 +4,22 @@
   }
 
   .main-business__innerwrap {
-    width: 1420px;
     min-height: 620px;
     background-image: url("../img/business-banner-desktop@1x.jpg");
     background-size: cover;
+    background-position: center;
     padding: 1px;
+    border-radius: 10px;
+
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .main-business__innerwrap {
+      background-image: url("../img/business-banner-desktop@2x.jpg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .main-business__header {
@@ -37,13 +48,5 @@
 
   .main-business__button {
     margin-top: 40px;
-  }
-
-  @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    .main-business__innerwrap {
-      background-image: url("../img/business-banner-desktop@2x.jpg");
-      background-size: cover;
-    }
   }
 }

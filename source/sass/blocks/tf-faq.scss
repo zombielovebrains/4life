@@ -42,25 +42,47 @@
 
     background-image: url("../img/arrow-btn.svg");
     margin-left: auto;
+    transition: .2s transform ease;
 
     &--active {
       transform: rotate(180deg);
     }
   }
 
-  .tf-faq__text {
+  .tf-faq__textbox {
     font-family: $font;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
     color: $gray;
+    max-width: 1160px;
 
-    padding-top: 18px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 53px;
+    padding: 10px 50px 53px 50px;
 
     background-color: $lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    visibility: visible;
+    min-height: 175px;
+    transition: .3s all ease;
+
+    &--hidden {
+      visibility: hidden;
+      max-height: 0;
+      min-height: 0;
+      padding: 0;
+    }
+  }
+
+  .tf-faq__text {
+    opacity: 1;
+    transition: .2s all ease;
+
+    &--hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 }

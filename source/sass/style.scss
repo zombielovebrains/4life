@@ -45,6 +45,7 @@ p {
 button {
   background-color: transparent;
   border-style: none;
+  outline-color: transparent;
 }
 
 h2 {
@@ -67,6 +68,15 @@ h2 {
   }
 }
 
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -74,12 +84,20 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .max-box {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
-.max-box {
-  max-width: 1420px;
-  margin: 0 auto;
+@media ( min-width: 1440px) {
+  .max-box {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -113,7 +131,6 @@ h2 {
   position: relative;
   display: flex;
   align-items: center;
-  outline: none;
 
   &::after {
     content: "";
@@ -149,6 +166,13 @@ h2 {
   &--pink {
     &::before {
       background-color: $pink;
+    }
+  }
+
+  &--small {
+    &::before {
+      height: 10px;
+      bottom: 2px;
     }
   }
 }
