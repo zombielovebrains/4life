@@ -52,6 +52,39 @@ h2 {
   margin: 0;
 }
 
+.button {
+  width: 142px;
+  height: 40px;
+
+  background: $pink;
+  border-radius: 30px;
+  padding-left: 22px;
+
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  line-height: 40px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $green;
+
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    margin-top: -8px;
+  }
+}
+
 .container {
   width: 320px;
   margin: 0 auto;
@@ -63,8 +96,28 @@ h2 {
   .container {
     width: 768px;
     margin: 0 auto;
-    padding-left: 46px;
-    padding-right: 46px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .button {
+    width: 156px;
+    height: 46px;
+    padding-left: 25px;
+    line-height: 46px;
+
+    &::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: $green;
+
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      margin-top: -9px;
+    }
   }
 }
 
@@ -74,6 +127,26 @@ h2 {
     margin: 0 auto;
     padding-left: 52px;
     padding-right: 52px;
+  }
+
+  .button {
+    width: 178px;
+    height: 50px;
+    padding-left: 35px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: $green;
+
+      position: absolute;
+      top: 50%;
+      right: 35px;
+      margin-top: -9px;
+    }
   }
 }
 
@@ -88,6 +161,12 @@ h2 {
   .max-box {
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .button {
+    width: 184px;
+    height: 52px;
+    line-height: 52px;
   }
 }
 
@@ -112,38 +191,6 @@ h2 {
 
 .active-element {
   cursor: pointer;
-}
-
-.button {
-  width: 184px;
-  height: 52px;
-
-  background: $pink;
-  border-radius: 30px;
-  padding-left: 35px;
-
-  font-family: $font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  color: #fff;
-
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  &::after {
-    content: "";
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: $green;
-
-    position: absolute;
-    top: 50%;
-    right: 35px;
-    margin-top: -9px;
-  }
 }
 
 .underlined-text {

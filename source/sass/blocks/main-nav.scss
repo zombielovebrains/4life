@@ -1,18 +1,74 @@
-@media (min-width: 1024px) {
-  .main-nav {
-    min-height: 86px;
-    padding: 0 52px;
+.main-nav {
+  min-height: 60px;
+  padding: 0 6.25%;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+.main-nav__buttonbox {
+  display: flex;
+  margin-left: auto;
+}
+
+.main-nav__innerbox {
+  display: none;
+}
+
+.main-nav__cart {
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.main-nav__item--filled {
+  display: none;
+}
+
+.main-nav__cartbutton {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: $pink url("../img/cart-icon.svg") center no-repeat;
+  background-size: 16px 16px;
+  border-radius: 50%;
+}
+
+.main-nav__cart-counter {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  z-index: 2;
+
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background-color: $green;
+  border-radius: 50%;
+
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 20px;
+  color: $fcolor;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    min-height: 82px;
+    padding: 0 64px;
   }
 
-  .main-nav {
-    min-height: 100px;
-    padding: 0 40px;
-  }
-
-  .main-nav__list {
+  .main-nav__cartbutton {
     display: none;
   }
 
@@ -22,26 +78,26 @@
   }
 
   .main-nav__innerbox {
-    padding: 0 23px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
+  }
 
-    &:last-child {
-      padding: 0;
-    }
+  .main-nav__cart {
+    padding: 0;
   }
 
   .main-nav__item {
     font-family: $font;
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
     color: $fcolor;
 
     &--stroked {
-      width: 163px;
-      min-height: 48px;
+      width: 138px;
+      min-height: 42px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -53,8 +109,8 @@
     }
 
     &--filled {
-      width: 109px;
-      min-height: 48px;
+      width: 87px;
+      min-height: 42px;
 
       display: flex;
       justify-content: center;
@@ -69,28 +125,36 @@
   }
 
   .main-nav__cart-counter {
-    position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
 
     width: 25px;
     height: 25px;
     margin-top: -8px;
     margin-right: -8px;
-    background-color: $green;
-    border-radius: 50%;
 
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 25px;
-    color: $fcolor;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-nav {
+    min-height: 86px;
+    padding: 0 52px;
+  }
+
+  .main-nav__item {
+    &--stroked {
+      width: 158px;
+      min-height: 46px;
+    }
+
+    &--filled {
+      width: 107px;
+      min-height: 46px;
+    }
   }
 }
 
@@ -106,80 +170,22 @@
     margin-left: auto;
   }
 
-  .main-nav__buttonbox {
-    margin-left: 0;
-  }
-
-  .main-nav__innerbox {
-    padding: 0 23px;
-    display: flex;
-    align-items: center;
-
-    &:last-child {
-      padding: 0;
-    }
-  }
-
   .main-nav__item {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
     font-size: 15px;
-    line-height: 18px;
-    color: $fcolor;
 
     &--stroked {
       width: 163px;
       min-height: 48px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      border: 2px solid $pink;
-      border-radius: 30px;
-
-      color: $pink;
     }
 
     &--filled {
       width: 109px;
       min-height: 48px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-
-      border-radius: 30px;
-      background-color: $pink;
-
-      color: #fff;
     }
   }
 
-  .main-nav__cart-counter {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-
-    width: 25px;
-    height: 25px;
-    margin-top: -8px;
-    margin-right: -8px;
-    background-color: $green;
-    border-radius: 50%;
-
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 25px;
-    color: $fcolor;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .main-nav__buttonbox {
+    margin-left: 0;
   }
 }
 

@@ -18,7 +18,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
             <source media="(min-width: 1024px)" srcset="img/logo-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop.png">
             <img src="img/logo-mobile.png" alt="4Life" class="main-nav__logo">
           </picture>
         </div>
@@ -30,8 +30,8 @@
           <li class="main-nav__innerbox"><a href="" class="main-nav__item">Контакты</a></li>
         </ul>
         <div class="main-nav__buttonbox">
-          <div class="main-nav__innerbox"><a href="" class="main-nav__item main-nav__item--stroked">Консультация</a></div>
-          <div class="main-nav__innerbox"><a href="" class="main-nav__item main-nav__item--filled">Корзина<span class="main-nav__cart-counter">2</span></a></div>
+          <div class="main-nav__innerbox main-nav__consult"><a href="" class="main-nav__item main-nav__item--stroked">Консультация</a></div>
+          <div class="main-nav__innerbox main-nav__cart"><a href="" class="main-nav__cartbutton"></a><a href="" class="main-nav__item main-nav__item--filled">Корзина</a><span class="main-nav__cart-counter">2</span></div>
         </div>
       </nav>
     </header>
@@ -46,23 +46,29 @@
         <picture class="main-screen__parallax main-screen__parallax--reflexion">
           <source media="(min-width: 1200px)"
             srcset="img/reflexion-desktop@1x.png 1x, img/reflexion-desktop@2x.png 2x">
+          <source media="(min-width: 1024px)"
+            srcset="img/reflexion-tablet-large@1x.png 1x, img/reflexion-tablet-large@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="img/reflexion-tablet@1x.png 1x, img/reflexion-tablet@2x.png 2x">
-          <img src="img/reflexion-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-mobile@2x.png 2x">
+          <img src="img/reflexion-mobile@1x.png" srcset="img/reflexion-mobile@2x.png 2x">
         </picture>
         <picture class="main-screen__parallax main-screen__parallax--belle-vi">
           <source media="(min-width: 1200px)"
             srcset="img/belle-vi-desktop@1x.png 1x, img/belle-vi-desktop@2x.png 2x">
+          <source media="(min-width: 1024px)"
+            srcset="img/belle-vi-tablet-large@1x.png 1x, img/belle-vi-tablet-large@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="img/belle-vi-tablet@1x.png 1x, img/belle-vi-tablet@2x.png 2x">
-          <img src="img/belle-vi-mobile@1x.png" alt="Красивое фото" srcset="img/belle-vi-mobile@2x.png 2x">
+          <img src="img/belle-vi-mobile@1x.png" srcset="img/belle-vi-mobile@2x.png 2x">
         </picture>
         <picture class="main-screen__parallax main-screen__parallax--aloe">
           <source media="(min-width: 1200px)"
             srcset="img/aloe-desktop@1x.png 1x, img/aloe-desktop@2x.png 2x">
+          <source media="(min-width: 1024px)"
+            srcset="img/aloe-tablet-large@1x.png 1x, img/aloe-tablet-large@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="img/aloe-tablet@1x.png 1x, img/aloe-tablet@2x.png 2x">
-          <img src="img/aloe-mobile@1x.png" alt="Красивое фото" srcset="img/aloe-mobile@2x.png 2x">
+          <img src="img/aloe-mobile@1x.png" srcset="img/aloe-mobile@2x.png 2x">
         </picture>
       </section>
       <section class="presentation">
@@ -74,6 +80,8 @@
               <source type="image/webp" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x"> -->
               <source media="(min-width: 1200px)"
                 srcset="img/video-preview-desktop@1x.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+              <source media="(min-width: 1024px)"
+                srcset="img/video-preview-tablet-large@1x.jpg 1x, img/video-preview-tablet-large@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/video-preview-tablet@1x.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
               <img src="img/video-preview-mobile@1x.jpg" alt="Красивое фото" srcset="img/video-preview-mobile@2x.jpg 2x"
@@ -93,6 +101,11 @@
               Человек не&nbsp;заболел, а&nbsp;в&nbsp;его крови были обнаружены антитела к&nbsp;туберкулёзу.
               Таким образом, д-р Лоуренс сделал вывод, что эти вещества передают иммунный опыт одного человека другому,
               которые он&nbsp;назвал трансфер факторы&nbsp;&mdash; факторы переноса.
+            </p>
+            <p class="presentation__description presentation__description--small">
+              ТФ&nbsp;&mdash; это маленькие &laquo;белки&raquo;, точнее, пептиды, которые синтезируются в&nbsp;самом
+              организме.
+              Состоят они всего из&nbsp;44&nbsp;аминокислот и&nbsp;являются носителями информации.
             </p>
             <a href="" class="presentation__button button">Подробнее</a>
           </div>
