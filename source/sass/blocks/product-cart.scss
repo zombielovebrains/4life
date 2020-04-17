@@ -190,7 +190,7 @@
 }
 
 @media (min-width: 1200px) {
-  .product-cart__hover-elem {
+  .product-cart__product:hover >.product-cart__hover-elem  {
     position: absolute;
     top: 18px;
     z-index: -1;
@@ -242,12 +242,12 @@
         width: 10px;
         height: 10px;
         background: url("../img/plus-white.svg") center no-repeat;
-        margin-left: 15px;
       }
     }
   }
 
   .product-cart__add-btn:hover > .product-cart__add-text {
     display: inline-block;
+    margin-right: 15px;
   }
 }

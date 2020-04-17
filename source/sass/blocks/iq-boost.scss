@@ -1,20 +1,127 @@
+.iq-boost {
+  padding-top: 80px;
+}
+
+.iq-boost__flexwrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.iq-boost__header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: $fcolor;
+}
+
+.iq-boost__textbox {
+  margin-top: 20px;
+}
+
+.iq-boost__subtitle {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: $fcolor;
+}
+
+.iq-boost__description {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray;
+
+  margin-top: 10px;
+}
+
+.iq-boost__button {
+  margin-top: 30px;
+}
+
+.iq-boost__info {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .iq-boost {
+    padding-top: 100px;
+  }
+
+  .iq-boost__flexwrap {
+    padding-top: 40px;
+  }
+
+  .iq-boost__header {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .iq-boost__textbox {
+    padding-right: 20px;
+    margin-top: 30px;
+  }
+
+  .iq-boost__description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .iq-boost__info {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .iq-boost__flexwrap {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
+  .iq-boost__header {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .iq-boost__textbox {
+    width: 400px;
+    padding-left: 60px;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .iq-boost__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .iq-boost__button {
+    margin-top: 40px;
+  }
+
+  .iq-boost__info {
+    margin-top: 50px;
+  }
+}
+
 @media (min-width: 1200px) {
   .iq-boost {
     padding-top: 150px;
   }
 
   .iq-boost__flexwrap {
-    display: flex;
     padding-top: 60px;
   }
 
   .iq-boost__header {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 600;
     font-size: 50px;
     line-height: 68px;
-    color: $fcolor;
   }
 
   .iq-boost__diagram {
@@ -27,22 +134,11 @@
   }
 
   .iq-boost__subtitle {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
     font-size: 25px;
     line-height: 38px;
-    color: $fcolor;
   }
 
   .iq-boost__description {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    color: $gray;
-
     margin-top: 20px;
   }
 
