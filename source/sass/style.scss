@@ -85,6 +85,37 @@ h2 {
   }
 }
 
+.underlined-text {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+
+    background-color: $green;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &--pink {
+    &::before {
+      background-color: $pink;
+    }
+  }
+
+  &--small {
+    &::before {
+      height: 8px;
+      bottom: 3px;
+    }
+  }
+}
+
 .container {
   width: 320px;
   margin: 0 auto;
@@ -148,6 +179,20 @@ h2 {
       margin-top: -9px;
     }
   }
+
+  .underlined-text {
+    &::before {
+      height: 15px;
+      bottom: 2px;
+    }
+
+    &--small {
+      &::before {
+        height: 10px;
+        bottom: 2px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -191,37 +236,6 @@ h2 {
 
 .active-element {
   cursor: pointer;
-}
-
-.underlined-text {
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 15px;
-
-    background-color: $green;
-
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    z-index: -1;
-  }
-
-  &--pink {
-    &::before {
-      background-color: $pink;
-    }
-  }
-
-  &--small {
-    &::before {
-      height: 10px;
-      bottom: 2px;
-    }
-  }
 }
 
 %header-settings {

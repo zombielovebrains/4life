@@ -1,3 +1,125 @@
+.main-business {
+  padding-top: 40px;
+}
+
+.main-business__innerwrap {
+  min-height: 620px;
+  background-image: url("../img/business-banner-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 1px;
+  padding-top: 40px;
+
+  display: flex;
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .main-business__innerwrap {
+    background-image: url("../img/business-banner-mobile@2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.main-business__header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.main-business__description {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.7;
+
+  width: 280px;
+  margin-top: 10px;
+}
+
+.main-business__button {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-business {
+    padding-top: 100px;
+  }
+
+  .main-business__innerwrap {
+    min-height: 510px;
+    background-image: url("../img/business-banner-tablet@1x.jpg");
+    padding: 1px;
+    align-items: center;
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .main-business__innerwrap {
+      background-image: url("../img/business-banner-tablet@2x.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .main-business__header {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .main-business__description {
+    font-size: 15px;
+    line-height: 26px;
+
+    width: 450px;
+  }
+
+
+  .main-business__button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-business__innerwrap {
+    min-height: 550px;
+    background-image: url("../img/business-banner-tablet-large@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .main-business__innerwrap {
+      background-image: url("../img/business-banner-tablet-large@2x.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .main-business__header {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .main-business__description {
+    font-size: 16px;
+    line-height: 28px;
+
+    width: 550px;
+    margin-top: 20px;
+  }
+
+  .main-business__button {
+    margin-top: 40px;
+  }
+}
+
 @media (min-width: 1200px) {
   .main-business {
     padding-top: 150px;
@@ -6,11 +128,6 @@
   .main-business__innerwrap {
     min-height: 620px;
     background-image: url("../img/business-banner-desktop@1x.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 1px;
-    border-radius: 10px;
-
   }
 
   @media (min-resolution: 144dpi),
@@ -23,30 +140,7 @@
   }
 
   .main-business__header {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 600;
     font-size: 50px;
     line-height: 68px;
-    color: #fff;
-
-    margin-top: 126px;
-  }
-
-  .main-business__description {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFFFFF;
-    opacity: 0.7;
-
-    width: 550px;
-    margin-top: 20px;
-  }
-
-  .main-business__button {
-    margin-top: 40px;
   }
 }

@@ -1,50 +1,117 @@
-@media (min-width: 1200px) {
-  .featurebox {
-    min-height: 262px;
-    padding-top: 110px;
-    position: relative;
+.featurebox {
+  padding-top: 90px;
+  position: relative;
 
+  &::before {
+    content: "";
+    width: 145px;
+    height: 90px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &--money {
     &::before {
-      content: "";
-      width: 145px;
-      height: 110px;
-
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &--money {
-      &::before {
-        background: url("../img/money-icon.svg") center no-repeat;
-      }
-    }
-
-    &--travel {
-      &::before {
-        background: url("../img/travel-icon.svg") center no-repeat;
-      }
-    }
-
-    &--cashback {
-      &::before {
-        background: url("../img/cashback-icon.svg") center no-repeat;
-      }
-    }
-
-    &--cards {
-      &::before {
-        background: url("../img/cards-icon.svg") center no-repeat;
-      }
-    }
-
-    &--chat {
-      &::before {
-        background: url("../img/chat-icon.svg") center no-repeat;
-      }
+      background: url("../img/money-icon.svg") center no-repeat;
+      background-size: contain;
     }
   }
 
+  &--travel {
+    &::before {
+      background: url("../img/travel-icon.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &--cashback {
+    &::before {
+      background: url("../img/cashback-icon.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &--cards {
+    &::before {
+      background: url("../img/cards-icon.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &--chat {
+    &::before {
+      background: url("../img/chat-icon.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.featurebox__title {
+  margin-top: 10px;
+
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: $fcolor;
+}
+
+.featurebox__description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray;
+
+  margin-top: 10px;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .featurebox {
+    padding-top: 110px;
+
+    &::before {
+      height: 110px;
+    }
+  }
+
+  .featurebox__title {
+    margin-top: 20px;
+  }
+
+  .featurebox__description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featurebox__title {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    width: 260px;
+  }
+
+  .featurebox__description {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: $gray;
+
+    margin-top: 10px;
+    width: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
   .featurebox__title {
     margin-top: 30px;
 
@@ -54,6 +121,7 @@
     font-size: 20px;
     line-height: 28px;
     color: $fcolor;
+    width: auto;
   }
 
   .featurebox__description {

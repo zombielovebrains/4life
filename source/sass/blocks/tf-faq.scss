@@ -1,72 +1,124 @@
-@media (min-width: 1200px) {
-  .tf-faq__infobox {
-    margin-bottom: 10px;
+.tf-faq__infobox:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tf-faq__flexwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tf-faq__titlebox {
+  min-height: 75px;
+  background-color: $lightgray;
+  border-radius: 10px;
+
+  display: flex;
+  padding: 15px 20px;
+}
+
+.tf-faq__name {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $fcolor;
+}
+
+.tf-faq__percent {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: $fcolor;
+}
+
+.tf-faq__button {
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/arrow-btn.svg");
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  transition: .2s transform ease;
+
+  &--active {
+    transform: rotate(180deg);
+  }
+}
+
+.tf-faq__textbox {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray;
+
+  padding: 10px 20px 23px 20px;
+
+  background-color: $lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  visibility: visible;
+  min-height: 280px;
+  transition: .3s all ease;
+
+  &--hidden {
+    visibility: hidden;
+    max-height: 0;
+    min-height: 0;
+    padding: 0;
+  }
+}
+
+.tf-faq__text {
+  opacity: 1;
+  transition: .2s all ease;
+
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .tf-faq__flexwrap {
+    flex-direction: row;
   }
 
   .tf-faq__titlebox {
-    width: 1160px;
-    min-height: 95px;
-    background-color: $lightgray;
-    border-radius: 10px;
-
-    display: flex;
+    min-height: 85px;
+    padding: 0 30px;
     align-items: center;
-    padding: 0 50px;
   }
 
   .tf-faq__name {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    color: $fcolor;
-
+    font-size: 18px;
+    line-height: 26px;
     width: 250px;
   }
 
   .tf-faq__percent {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    color: $fcolor;
-
-    margin-left: 60px;
+    font-size: 18px;
+    margin-left: 30px;
   }
 
   .tf-faq__button {
     width: 34px;
     height: 34px;
-
-    background-image: url("../img/arrow-btn.svg");
-    margin-left: auto;
-    transition: .2s transform ease;
-
-    &--active {
-      transform: rotate(180deg);
-    }
   }
 
   .tf-faq__textbox {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    color: $gray;
-    max-width: 1160px;
+    font-size: 15px;
+    line-height: 26px;
 
-    padding: 10px 50px 53px 50px;
-
-    background-color: $lightgray;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    visibility: visible;
+    padding: 10px 30px 33px 30px;
     min-height: 175px;
-    transition: .3s all ease;
 
     &--hidden {
       visibility: hidden;
@@ -75,14 +127,35 @@
       padding: 0;
     }
   }
+}
 
-  .tf-faq__text {
-    opacity: 1;
-    transition: .2s all ease;
+@media (min-width: 1024px) {
+  .tf-faq__titlebox {
+    min-height: 95px;
+    padding: 0 50px;
+  }
+
+  .tf-faq__name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .tf-faq__percent {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 60px;
+  }
+
+  .tf-faq__textbox {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px 50px 53px 50px;
 
     &--hidden {
-      opacity: 0;
       visibility: hidden;
+      max-height: 0;
+      min-height: 0;
+      padding: 0;
     }
   }
 }
