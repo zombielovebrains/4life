@@ -1,8 +1,8 @@
 (function (){
   let faqBox = document.querySelector(".tf-faq");
 
-  function switchClass (btn, innerBox) {
-    let hiddenBlock = innerBox;
+  function switchClass (btn, textBox) {
+    let hiddenBlock = textBox;
     let hiddenText = hiddenBlock.querySelector(".tf-faq__text");
 
     if (btn.classList.contains("tf-faq__button--active")) {
@@ -18,10 +18,11 @@
 
   faqBox.addEventListener("click", function (evt) {
     let target = evt.target;
-    let targetBox= target.closest(".tf-faq__infobox").querySelector(".tf-faq__textbox");
-
-    if (target.classList.contains("tf-faq__button")) {
-      switchClass(target, targetBox);
+    let infoBox = target.closest(".tf-faq__infobox");
+    if (infoBox) {
+      let btn = infoBox .querySelector('.tf-faq__button');
+      let textBox = infoBox .querySelector('.tf-faq__textbox');
+      switchClass(btn, textBox);
     }
   });
 })();

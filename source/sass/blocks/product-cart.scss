@@ -3,7 +3,7 @@
   min-height: 360px;
   border-radius: 10px;
   background-color: $lightgray;
-
+  position: relative;
   margin: 0;
 }
 
@@ -18,7 +18,16 @@
 }
 
 .product-cart__hover-elem {
-  display: none;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -150px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+
+  width: 300px;
+  height: 300px;
+
 }
 
 .product-cart__info {
@@ -72,15 +81,12 @@
   background-color: $pink;
 
   justify-content: flex-start;
+  transition: 0.25s padding ease-out;
+}
 
-  &::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: url("../img/plus-white.svg") center no-repeat;
-    margin-left: 15px;
-  }
+.product-cart__plus-icon {
+  stroke: #fff;
+  transition: 0.2s stroke ease-out;
 }
 
 .product-cart__add-text {
@@ -90,6 +96,7 @@
   font-size: 14px;
   line-height: 28px;
   color: #fff;
+  margin-right: 15px;
 }
 
 
@@ -190,21 +197,22 @@
 }
 
 @media (min-width: 1200px) {
-  .product-cart__product:hover >.product-cart__hover-elem  {
-    position: absolute;
-    top: 18px;
-    z-index: -1;
-    display: block;
-
-    width: 300px;
-    height: 300px;
+  .product-cart:hover >.product-cart__hover-elem  {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
   }
 
-  .product-cart__add-text {
+
+  .product-cart__plus-icon--pink {
+    stroke: $pink;
+    transition: 0.2s stroke ease-out;
+  }
+
+  .product-cart__add-text--hidden {
     display: none;
   }
 
-  .product-cart__add-btn {
+  .product-cart__add-btn--filled {
     min-width: 34px;
     height: 34px;
 
@@ -216,38 +224,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s min-width ease-out;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 10px;
-      height: 10px;
-      background: url("../img/plus-pink.svg") center no-repeat;
-      margin-left: 0;
-    }
-
-    &:hover {
-      padding-left: 17px;
-      padding-right: 12px;
-      border: none;
-      border-radius: 20px;
-      background-color: $pink;
-
-      justify-content: flex-start;
-
-      &::after {
-        content: "";
-        display: block;
-        width: 10px;
-        height: 10px;
-        background: url("../img/plus-white.svg") center no-repeat;
-      }
-    }
-  }
-
-  .product-cart__add-btn:hover > .product-cart__add-text {
-    display: inline-block;
-    margin-right: 15px;
+    transition: 0.25s padding ease-out;
   }
 }
