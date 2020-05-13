@@ -53,23 +53,22 @@ h2 {
 }
 
 .button {
-  width: 142px;
   height: 40px;
 
   background: $pink;
   border-radius: 30px;
-  padding-left: 22px;
+  padding: 0 60px 0 25px;
 
   font-family: $font;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   line-height: 40px;
 
   position: relative;
-  display: flex;
-  align-items: center;
+  display: inline-block;
+
 
   &::after {
     content: "";
@@ -80,7 +79,7 @@ h2 {
 
     position: absolute;
     top: 50%;
-    right: 22px;
+    right: 25px;
     margin-top: -8px;
   }
 }
@@ -132,21 +131,13 @@ h2 {
   }
 
   .button {
-    width: 156px;
     height: 46px;
-    padding-left: 25px;
     line-height: 46px;
 
     &::after {
       content: "";
       width: 18px;
       height: 18px;
-      border-radius: 50%;
-      background-color: $green;
-
-      position: absolute;
-      top: 50%;
-      right: 25px;
       margin-top: -9px;
     }
   }
@@ -161,22 +152,12 @@ h2 {
   }
 
   .button {
-    width: 178px;
     height: 50px;
-    padding-left: 35px;
     line-height: 50px;
+    padding: 0 70px 0 35px;
 
     &::after {
-      content: "";
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background-color: $green;
-
-      position: absolute;
-      top: 50%;
       right: 35px;
-      margin-top: -9px;
     }
   }
 
@@ -209,7 +190,6 @@ h2 {
   }
 
   .button {
-    width: 184px;
     height: 52px;
     line-height: 52px;
   }

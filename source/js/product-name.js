@@ -1,7 +1,7 @@
 (function (){
   let textBox = {
     proChoco: {
-      box: document.querySelector(".product-cart__name--pro"),
+      box: document.querySelector(".product-card__name--pro"),
       originalContent: 'Протеиновый коктейль<br>ПРО-ТФ шоколад',
       changedContent: 'ПРО-ТФ'
     }

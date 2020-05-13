@@ -41,7 +41,7 @@
         <div class="container main-screen__flexwrap">
           <p class="main-screen__header main-screen__header--small">Трансфер Фактор</p>
           <p class="main-screen__text"><span class="underlined-text">Уникальный</span> природный иммуномодулятор</p>
-          <a href="" class="main-screen__button button">Подробнее</a>
+          <a href="" class="main-screen__button button button--link">Подробнее</a>
         </div>
         <picture class="main-screen__parallax main-screen__parallax--reflexion">
           <source media="(min-width: 1200px)"
@@ -107,7 +107,7 @@
               организме.
               Состоят они всего из&nbsp;44&nbsp;аминокислот и&nbsp;являются носителями информации.
             </p>
-            <a href="" class="presentation__button button">Подробнее</a>
+            <a href="" class="presentation__button button button--link">Подробнее</a>
           </div>
         </div>
       </section>
@@ -128,9 +128,9 @@
           </div>
           <ul class="products__list">
             <li class="products__item">
-              <figure class="products__cart product-cart">
-                <div class="product-cart__product">
-                  <picture class="product-cart__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
                     <source media="(min-width: 1024px)"
                       srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
@@ -138,24 +138,37 @@
                     <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
                   </picture>
                 </div>
-                <figcaption class="product-cart__info">
-                  <p class="product-cart__name product-cart__name--pro">Протеиновый коктейль<br>ПРО-ТФ шоколад</p>
-                  <div class="product-cart__flexwrap">
-                    <p class="product-cart__price">3250</p>
-                    <button class="product-cart__add-btn" tabindex="0"><span class="product-cart__add-text">В корзину</span>
-                      <svg class="product-cart__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                <figcaption class="product-card__info">
+                  <p class="product-card__name product-card__name--pro">Протеиновый коктейль<br>ПРО-ТФ шоколад</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
                       </svg>
                     </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <span class="product-card__count-field">1</span>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus " width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-cart__hover-elem">
+                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
               </figure>
             </li>
             <li class="products__item">
-              <figure class="products__cart product-cart">
-                <div class="product-cart__product">
-                  <picture class="product-cart__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
                     <source media="(min-width: 1024px)"
                       srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
@@ -163,24 +176,37 @@
                     <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
                   </picture>
                 </div>
-                <figcaption class="product-cart__info">
-                  <p class="product-cart__name">Трансфер фактор<br>Классик</p>
-                  <div class="product-cart__flexwrap">
-                    <p class="product-cart__price">3250</p>
-                    <button class="product-cart__add-btn" tabindex="0"><span class="product-cart__add-text">В корзину</span>
-                      <svg class="product-cart__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                <figcaption class="product-card__info">
+                  <p class="product-card__name">Трансфер фактор<br>Классик</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
                       </svg>
                     </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <span class="product-card__count-field">1</span>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-cart__hover-elem">
+                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
               </figure>
             </li>
             <li class="products__item">
-              <figure class="products__cart product-cart">
-                <div class="product-cart__product">
-                  <picture class="product-cart__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
                     <source media="(min-width: 1024px)"
                       srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
@@ -188,21 +214,35 @@
                     <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
                   </picture>
                 </div>
-                <figcaption class="product-cart__info">
-                  <p class="product-cart__name">Кардио</p>
-                  <div class="product-cart__flexwrap">
-                    <p class="product-cart__price">3250</p>
-                    <button class="product-cart__add-btn" tabindex="0"><span class="product-cart__add-text">В корзину</span>
-                      <svg class="product-cart__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                <figcaption class="product-card__info">
+                  <p class="product-card__name">Кардио</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
                       </svg>
                     </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <span class="product-card__count-field">1</span>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-cart__hover-elem">
+                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
               </figure>
             </li>
           </ul>
+          <a href="#" class="products__button button button--large">Все продукты</a>
         </div>
       </section>
       <section class="iq-boost">
@@ -243,7 +283,7 @@
                   <source media="(min-width: 1200px)"
                     srcset="img/plus-percent-desktop@1x.png 1x, img/plus-percent-desktop@2x.png 2x">
                   <source media="(min-width: 1024px)"
-                    srcset="img/plus-percent-item-tablet-large@1x.png 1x, img/plus-percent-tablet-large@2x.png 2x">
+                    srcset="img/plus-percent-tablet-large@1x.png 1x, img/plus-percent-tablet-large@2x.png 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/plus-percent-tablet@1x.png 1x, img/plus-percent-tablet@2x.png 2x">
                   <img src="img/plus-percent-mobile@1x.png" alt="Увеличение на 437%" srcset="img/plus-percent-mobile@2x.png 2x" class="diagram__inscrease-block">
@@ -397,7 +437,7 @@
     </div>
   </footer>
   <script src="js/tf-faq.js"></script>
-  <script src="js/product.js"></script>
+  <script src="js/product-name.js"></script>
   <script src="js/product-card.js"></script>
 </body>
 </html>

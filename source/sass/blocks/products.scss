@@ -33,6 +33,10 @@
   }
 }
 
+.products__button {
+  margin-top: 30px;
+}
+
 @media (min-width: 768px) {
   .products {
     padding-top: 100px;
@@ -203,6 +207,10 @@
 
   .products__item {
     margin-right: 60px;
+  }
+
+  .products__button {
+    margin-top: 40px;
   }
 }
 
