@@ -24,7 +24,7 @@
     countBtnsBox.classList.add('product-card__count-btns--active');
   }
 
-  function checkCountField(target, field, flag) {
+  function checkCountField (target, field, flag) {
     let countField = field;
     let count = +countField.value;
     if (!flag && (count > 1)) {

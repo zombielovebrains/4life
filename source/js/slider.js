@@ -7,6 +7,7 @@
 
   function activateSlider () {
     document.documentElement.style.overflowX = 'hidden';
+    document.body.style.overflowX = 'hidden';
     sliderBox.classList.add('owl-carousel');
   }
   activateSlider();

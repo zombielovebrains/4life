@@ -1606,7 +1606,7 @@ path {
     .featurebox__description--small {
       width: 300px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .footer {
     background-color: #F4F9FC;
     padding-top: 60px;
