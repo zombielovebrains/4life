@@ -22,6 +22,11 @@
     changeContent( textBox.proChoco);
   };
 
-  changeContent(textBox.proChoco);
+  function activateNameChanger () {
+    changeContent(textBox.proChoco);
+  }
 
+  window.productName = {
+    activate: activateNameChanger
+  };
 })();

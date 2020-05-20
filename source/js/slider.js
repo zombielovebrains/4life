@@ -5,15 +5,13 @@
   let nextBtn = document.querySelector('.products__toggle--next');
   let prevBtn = document.querySelector('.products__toggle--prev');
 
-
   function activateSlider () {
     document.documentElement.style.overflowX = 'hidden';
     sliderBox.classList.add('owl-carousel');
   }
-
   activateSlider();
 
- let owl = $('.owl-carousel');
+  let owl = $('.owl-carousel');
 
   owl.owlCarousel({
     autoWidth:true,
@@ -44,5 +42,9 @@
   prevBtn.addEventListener('click', function() {
     owl.trigger("prev.owl.carousel");
   });
+
+  window.slider = {
+    activate: activateSlider
+  };
 
 })();
