@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <title>Трансфер фактор</title>
@@ -121,12 +122,12 @@
               <li class="products__filter"><a href="" class="products__link">Целенаправленные ТФ</a></li>
               <li class="products__filter"><a href="" class="products__link">Трансформация тела</a></li>
             </ul>
-            <ul class="products__toggleset">
-              <li><button type="button" class="products__toggle products__toggle--prev "></button></li>
-              <li><button type="button" class="products__toggle products__toggle--next"></button></li>
-            </ul>
+            <div class="products__toggleset owl-nav">
+              <button type="button" class="products__toggle products__toggle--prev owl-prev"></button>
+              <button type="button" class="products__toggle products__toggle--next owl-next"></button>
+            </div>
           </div>
-          <ul class="products__list owl-carousel">
+          <ul class="products__list">
 
             <li class="products__item">
               <figure class="products__card product-card">
@@ -154,7 +155,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus " width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -163,7 +164,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -193,7 +194,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -202,7 +203,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -232,7 +233,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -241,7 +242,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -271,7 +272,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -280,7 +281,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -310,7 +311,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -319,7 +320,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -349,7 +350,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -358,7 +359,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -388,7 +389,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -397,7 +398,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
 
@@ -427,7 +428,7 @@
                           <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                           </svg>
                       </button>
-                      <span class="product-card__count-field">1</span>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
                       <button type="button" class="product-card__plus-btn">
                         <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                           <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -436,7 +437,7 @@
                     </div>
                   </div>
                 </figcaption>
-                <img src="img/green-circle.svg" alt="" class="product-card__hover-elem">
+                <div class="product-card__hover-elem"></div>
               </figure>
             </li>
           </ul>
@@ -637,6 +638,9 @@
   <script src="js/tf-faq.js"></script>
   <script src="js/product-name.js"></script>
   <script src="js/product-card.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="js/owl.carousel.min.js"></script> -->
+  <script src="js/owl.carousel.js"></script>
   <script src="js/slider.js"></script>
 </body>
 </html>

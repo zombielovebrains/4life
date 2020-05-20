@@ -26,11 +26,11 @@
 
   function checkCountField(target, field, flag) {
     let countField = field;
-    let count = +countField.textContent;
+    let count = +countField.value;
     if (!flag && (count > 1)) {
-      countField.textContent = `${count - 1}`;
-    } else if (flag && (+countField.textContent < 999)) {
-      countField.textContent = `${count + 1}`;
+      countField.value= `${count - 1}`;
+    } else if (flag && (+countField.textContent < 1000)) {
+      countField.value = `${count + 1}`;
     } else {
       hideCountBtns(target);
     }
