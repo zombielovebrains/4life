@@ -1,26 +1,69 @@
-@media (min-width: 1024px)  {
+.footer {
+  background-color: $lightgray;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+
+.footer__flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex-basis: 50%;
+  margin-bottom: 15px;
+}
+
+.footer__list {
+  margin-top: 5px;
+}
+
+.footer__innerwrap {
+  margin-bottom: 5px;
+}
+
+.footer__nav, .footer__copyright {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  color: $gray;
+  opacity: 0.6;
+}
+
+.footer__item {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: $fcolor;
+}
+
+.footer__logo {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
   .footer {
-    background-color: $lightgray;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .footer__flexwrap {
-    display: flex;
+    margin-top: 100px;
   }
 
   .footer__column {
-    flex-basis: 25%;
-  }
+    flex-basis: 50%;
+    margin-bottom: 15px;
 
-  .footer__nav, .footer__copyright {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    color: $gray;
-    opacity: 0.6;
+    &--fullwidth {
+      flex-basis: 100%;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
   }
 
   .footer__list {
@@ -28,7 +71,17 @@
   }
 
   .footer__innerwrap {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+
+  .footer__nav, .footer__copyright {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    color: $gray;
+    opacity: 0.6;
   }
 
   .footer__item {
@@ -41,11 +94,31 @@
   }
 
   .footer__logo {
-    margin-top: 90px;
-  }
-
-  .footer__copyright {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
+@media (min-width: 1024px)  {
+  .footer__column {
+    flex-basis: 25%;
+    margin-bottom: 0;
+  }
+
+  .footer__list {
+    margin-top: 15px;
+  }
+
+  .footer__innerwrap {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: 100px;
+  }
+}

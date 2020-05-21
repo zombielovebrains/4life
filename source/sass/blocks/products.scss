@@ -22,7 +22,6 @@
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .products__item {
@@ -106,6 +105,10 @@
 
   .products__item--slider {
     margin-right: 30px;
+  }
+
+  .products__list {
+    justify-content: space-around;
   }
 }
 
@@ -212,4 +215,7 @@
     line-height: 68px;
   }
 
+  .products__list {
+    justify-content: space-between;
+  }
 }
