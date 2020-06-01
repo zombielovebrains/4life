@@ -1,0 +1,156 @@
+.life-rewards {
+  padding-top: 30px;
+}
+
+.life-rewards__flexwrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.life-reward__banner {
+  width: 280px;
+  height: 155px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--first {
+    background-image: url(../img/4life-presentation.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--second {
+    background-image: url(../img/our-presentation.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.life-rewards__header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: $fcolor;
+}
+
+.life-rewards__title {
+  font-family: "Lato", arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.life-rewards__button {
+  margin-top: 20px;
+}
+
+.life-rewards__container {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .life-rewards {
+    padding-top: 50px;
+  }
+
+  .life-rewards__header {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .life-rewards__flexwrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .life-reward__banner {
+    width: 310px;
+    height: 170px;
+    margin-top: 40px;
+
+    &--first {
+      background-image: url(../img/4life-presentation-tablet.jpg);
+    }
+
+    &--second {
+      background-image: url(../img/our-presentation-tablet.jpg);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .life-rewards__header {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .life-reward__banner {
+    width: 442px;
+    height: 245px;
+    margin-top: 60px;
+
+    &--first {
+      background-image: url(../img/4life-presentation-tablet-large.jpg);
+    }
+
+    &--second {
+      background-image: url(../img/our-presentation-tablet-large.jpg);
+    }
+  }
+
+  .life-rewards__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .life-rewards__container {
+    padding: 0 40px;
+  }
+
+  .life-rewards__button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .life-rewards {
+    padding-top: 120px;
+  }
+
+  .life-rewards__header {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .life-reward__banner {
+    width: 560px;
+    height: 310px;
+
+    &--first {
+      background-image: url(../img/4life-presentation-desktop.jpg);
+    }
+
+    &--second {
+      background-image: url(../img/our-presentation-desktop.jpg);
+    }
+  }
+
+  .life-rewards__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .life-rewards__container {
+    padding: 0 50px;
+  }
+
+  .life-rewards__button {
+    margin-top: 40px;
+  }
+}

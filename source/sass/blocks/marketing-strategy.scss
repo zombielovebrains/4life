@@ -1,0 +1,41 @@
+.marketing-strategy {
+  padding-top: 30px;
+}
+
+.marketing-strategy__header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: $fcolor;
+}
+
+@media (min-width: 768px) {
+  .marketing-strategy {
+    padding-top: 50px;
+  }
+
+  .marketing-strategy__header {
+    font-size: 33px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .marketing-strategy__header {
+    font-size: 40px;
+    line-height: 58px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .marketing-strategy {
+    padding-top: 120px;
+  }
+
+  .marketing-strategy__header {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}

@@ -11,6 +11,10 @@
   padding-bottom: 40px;
 
   display: flex;
+
+  &--meeting {
+    background-image: url("../img/meeting-banner-mobile@1x.jpg");
+  }
 }
 
 @media (min-resolution: 144dpi),
@@ -19,6 +23,10 @@
     background-image: url("../img/business-banner-mobile@2x.jpg");
     background-size: cover;
     background-position: center;
+
+    &--meeting {
+      background-image: url("../img/meeting-banner-mobile@2x.jpg");
+    }
   }
 }
 
@@ -29,6 +37,10 @@
   font-size: 25px;
   line-height: 36px;
   color: #fff;
+
+  &--dark {
+    color: $fcolor;
+  }
 }
 
 .main-business__description {
@@ -42,6 +54,10 @@
 
   width: 280px;
   margin-top: 10px;
+
+  &--dark {
+    color: $gray;
+  }
 }
 
 .main-business__button {
@@ -58,6 +74,10 @@
     background-image: url("../img/business-banner-tablet@1x.jpg");
     padding: 1px;
     align-items: center;
+
+    &--meeting {
+      background-image: url("../img/meeting-banner-mobile@1x.jpg");
+    }
   }
 
   @media (min-resolution: 144dpi),
@@ -66,6 +86,10 @@
       background-image: url("../img/business-banner-tablet@2x.jpg");
       background-size: cover;
       background-position: center;
+
+      &--meeting {
+        background-image: url("../img/meeting-banner-mobile@1x.jpg");
+      }
     }
   }
 
@@ -91,6 +115,10 @@
   .main-business__innerwrap {
     min-height: 550px;
     background-image: url("../img/business-banner-tablet-large@1x.jpg");
+
+    &--meeting {
+      background-image: url("../img/meeting-banner-mobile@1x.jpg");
+    }
   }
 
   @media (min-resolution: 144dpi),
@@ -99,6 +127,10 @@
       background-image: url("../img/business-banner-tablet-large@2x.jpg");
       background-size: cover;
       background-position: center;
+
+      &--meeting {
+        background-image: url("../img/meeting-banner-mobile@1x.jpg");
+      }
     }
   }
 
@@ -128,6 +160,10 @@
   .main-business__innerwrap {
     min-height: 620px;
     background-image: url("../img/business-banner-desktop@1x.jpg");
+
+    &--meeting {
+      background-image: url("../img/meeting-banner-desktop@1x.jpg");
+    }
   }
 
   @media (min-resolution: 144dpi),
@@ -136,6 +172,10 @@
       background-image: url("../img/business-banner-desktop@2x.jpg");
       background-size: cover;
       background-position: center;
+
+      &--meeting {
+        background-image: url("../img/meeting-banner-desktop@2x.jpg");
+      }
     }
   }
 
