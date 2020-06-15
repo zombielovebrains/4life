@@ -6,7 +6,11 @@
 .steps__item {
   padding-top: 90px;
   position: relative;
-  margin-top: 25px;
+  margin-top: 30px;
+
+  &--largePadding {
+    padding-top: 110px;
+  }
 
   &::before {
     content: "";
@@ -21,6 +25,7 @@
     &::before {
       background: url(../img/first-step.svg) center no-repeat;
       background-size: contain;
+
     }
   }
 
@@ -35,6 +40,33 @@
     &::before {
       background: url(../img/third-step.svg) center no-repeat;
       background-size: contain;
+    }
+  }
+
+  &--world {
+    &::before {
+      background: url(../img/world-icon.svg) center no-repeat;
+      background-size: contain;
+      width: 145px;
+      height: 110px;
+    }
+  }
+
+  &--research {
+    &::before {
+      background: url(../img/research-icon.svg) center no-repeat;
+      background-size: contain;
+      width: 145px;
+      height: 110px;
+    }
+  }
+
+  &--science {
+    &::before {
+      background: url(../img/science-icon.svg) center no-repeat;
+      background-size: contain;
+      width: 145px;
+      height: 110px;
     }
   }
 }
@@ -86,6 +118,11 @@
     padding-left: 0;
     margin-top: 60px;
     flex-basis: 33.3%;
+
+    &--largePadding {
+      padding-top: 110px;
+      min-height: 110px;
+    }
   }
 
   .steps__title {
@@ -93,6 +130,10 @@
     font-size: 20px;
     line-height: 28px;
     width: 260px;
+
+    &--anotherSize {
+      min-height: 56px;
+    }
   }
 
   .steps__description {
@@ -103,6 +144,10 @@
 @media (min-width: 1200px) {
   .steps__title {
     width: 303px;
+
+    &--anotherSize {
+      width: auto;
+    }
   }
 
   .steps__description {
