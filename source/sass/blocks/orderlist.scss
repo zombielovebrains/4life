@@ -1,0 +1,173 @@
+.orderlist__item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #DCEDF8;
+  border-bottom: 1px solid #DCEDF8;
+  margin-top: -1px;
+}
+
+.orderlist__info {
+  padding-left: 30px;
+}
+
+.orderlist__photobox {
+  width: 80px;
+}
+
+.orderlist__photo {
+  width: 100%;
+}
+
+.orderlist__name {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $fcolor;
+}
+
+.orderlist__price {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $fcolor;
+
+  margin-top: 10px;
+}
+
+.orderlist__lp {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #17181A;
+  opacity: 0.48;
+  padding-left: 15px;
+}
+
+.orderlist__count-btns {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-top: 10px;
+}
+
+.orderlist__plus-icon {
+  stroke: #fff;
+  transition: 0.2s stroke ease-out;
+}
+
+.orderlist__plus,
+.orderlist__minus {
+  stroke: $pink;
+  transition: 0.1s stroke ease-out;
+  pointer-events: none;
+}
+
+.orderlist__minus-btn {
+  min-width: 25px;
+  height: 25px;
+
+  padding: 0;
+  border: 2px solid $pink;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s background-color ease-out;
+
+  &:hover {
+    background-color: $pink;
+
+    .orderlist__minus {
+      stroke: #fff;
+    }
+  }
+}
+
+.orderlist__plus-btn {
+  min-width: 25px;
+  height: 25px;
+
+  padding: 0;
+  border: 2px solid $pink;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s background-color ease-out;
+
+  &:hover {
+    background-color: $pink;
+
+    .orderlist__plus {
+      stroke: #fff;
+    }
+  }
+}
+
+.orderlist__count-field {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $fcolor;
+  text-align: center;
+
+  margin: 0 5px;
+  padding: 5px 3px;
+  width: 40px;
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline: 1px solid $pink;
+  }
+}
+
+@media (min-width: 768px) {
+  .orderlist__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .orderlist__price {
+    font-size: 18px;
+    line-height: 26px;
+
+    margin: 0;
+  }
+
+  .orderlist__lp {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .orderlist__minus-btn {
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .orderlist__plus-btn {
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .orderlist__count-field {
+    font-size: 18px;
+  }
+
+  .orderlist__count-btns {
+    margin-top: 0;
+  }
+}

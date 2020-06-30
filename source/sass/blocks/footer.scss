@@ -21,7 +21,7 @@
 }
 
 .footer__innerwrap {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .footer__nav, .footer__copyright {
@@ -41,6 +41,10 @@
   font-size: 13px;
   line-height: 16px;
   color: $fcolor;
+
+  &--pink {
+    color: $pink;
+  }
 }
 
 .footer__logo {
@@ -90,7 +94,6 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    color: $fcolor;
   }
 
   .footer__logo {

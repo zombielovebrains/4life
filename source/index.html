@@ -23,16 +23,20 @@
             <img src="img/logo-mobile.png" alt="4Life" class="main-nav__logo">
           </picture>
         </div>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--activ">
           <li class="main-nav__innerbox"><a href="about.html" class="main-nav__item">О компании</a></li>
           <li class="main-nav__innerbox"><a href="shop.html" class="main-nav__item">Купить</a></li>
+          <li class="main-nav__innerbox"><a href="documents.html" class="main-nav__item">Сертификаты и аннотации</a></li>
           <li class="main-nav__innerbox"><a href="marketing.html" class="main-nav__item">Бизнес с 4Life</a></li>
-          <li class="main-nav__innerbox"><a href="" class="main-nav__item">Доставка</a></li>
+          <li class="main-nav__innerbox"><a href="delivery.html" class="main-nav__item">Доставка</a></li>
           <li class="main-nav__innerbox"><a href="contacts.html" class="main-nav__item">Контакты</a></li>
         </ul>
         <div class="main-nav__buttonbox">
-          <div class="main-nav__innerbox main-nav__consult"><a href="" class="main-nav__item main-nav__item--stroked">Консультация</a></div>
-          <div class="main-nav__innerbox main-nav__cart"><a href="" class="main-nav__cartbutton"></a><a href="" class="main-nav__item main-nav__item--filled">Корзина</a><span class="main-nav__cart-counter">2</span></div>
+          <button class="main-nav__menu">
+            <div class="main-nav__burger"></div>
+            <span class="main-nav__menu-text">Меню</span>
+          </button>
+          <div class="main-nav__innerbox main-nav__cart"><a href="" class="main-nav__cartbutton"></a><a href="cart.html" class="main-nav__item main-nav__item--filled">Корзина</a><span class="main-nav__cart-counter">2</span></div>
         </div>
       </nav>
     </header>
@@ -42,7 +46,7 @@
         <div class="container main-screen__flexwrap">
           <p class="main-screen__header main-screen__header--small">Трансфер Фактор</p>
           <p class="main-screen__text"><span class="underlined-text">Уникальный</span> природный иммуномодулятор</p>
-          <a href="shop.html" class="main-screen__button button button--link">Подробнее</a>
+          <a href="shop.html" class="main-screen__button button button--link">Купить</a>
         </div>
         <picture class="main-screen__parallax main-screen__parallax--reflexion">
           <source media="(min-width: 1200px)"
@@ -141,9 +145,9 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name product-card__name--pro">Протеиновый коктейль<br>ПРО-ТФ шоколад</p>
+                  <p class="product-card__name product-card__name--trai">ТФ Трай-Фактор</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">3310<span class="product-card__lp">35 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -180,9 +184,48 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name">Трансфер фактор<br>Классик</p>
+                  <p class="product-card__name product-card__name--plus">ТФ Плюс</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">4330<span class="product-card__lp">50 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+                <div class="product-card__hover-elem"></div>
+              </figure>
+            </li>
+
+            <li class="products__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
+                    <source media="(min-width: 1024px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                </div>
+                <figcaption class="product-card__info">
+                  <p class="product-card__name product-card__name--classic">ТФ Классик</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">3210<span class="product-card__lp">34 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -221,7 +264,7 @@
                 <figcaption class="product-card__info">
                   <p class="product-card__name">Кардио</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">4130<span class="product-card__lp">46 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -258,9 +301,9 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name">Кардио</p>
+                  <p class="product-card__name product-card__name--pro-choco">ПРО-ТФ шоколад</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">5250<span class="product-card__lp">25 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -297,9 +340,9 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name">Кардио</p>
+                  <p class="product-card__name product-card__name--pro-vanilla">ПРО-ТФ ваниль</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">5250<span class="product-card__lp">25 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -336,9 +379,9 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name">Кардио</p>
+                  <p class="product-card__name product-card__name--glucoach">Глюкоуч</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">4130<span class="product-card__lp">46 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -375,9 +418,9 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name">Кардио</p>
+                  <p class="product-card__name product-card__name--detox">Супер Детокс</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">2170<span class="product-card__lp">20 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -414,9 +457,165 @@
                   </picture>
                 </div>
                 <figcaption class="product-card__info">
-                  <p class="product-card__name">Кардио</p>
+                  <p class="product-card__name product-card__name--detox">Белл Ви</p>
                   <div class="product-card__flexwrap">
-                    <p class="product-card__price">3250<span class="product-card__lp">34 lp</span></p>
+                    <p class="product-card__price">4030<span class="product-card__lp">40 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+                <div class="product-card__hover-elem"></div>
+              </figure>
+            </li>
+
+            <li class="products__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
+                    <source media="(min-width: 1024px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                </div>
+                <figcaption class="product-card__info">
+                  <p class="product-card__name product-card__name--detox">Реколл</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">4210<span class="product-card__lp">40 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+                <div class="product-card__hover-elem"></div>
+              </figure>
+            </li>
+
+            <li class="products__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
+                    <source media="(min-width: 1024px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                </div>
+                <figcaption class="product-card__info">
+                  <p class="product-card__name product-card__name--detox">Энерджи Гоу Стикс</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">3210<span class="product-card__lp">34 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+                <div class="product-card__hover-elem"></div>
+              </figure>
+            </li>
+
+            <li class="products__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
+                    <source media="(min-width: 1024px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                </div>
+                <figcaption class="product-card__info">
+                  <p class="product-card__name product-card__name--detox">Берн</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">4210<span class="product-card__lp">35 lp</span></p>
+                    <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
+                      <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="product-card__count-btns">
+                      <button class="product-card__minus-btn" type="button">
+                        <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                      <input class="product-card__count-field" type="number" value="1" max="999"></input>
+                      <button type="button" class="product-card__plus-btn">
+                        <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                          <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+                <div class="product-card__hover-elem"></div>
+              </figure>
+            </li>
+
+            <li class="products__item">
+              <figure class="products__card product-card">
+                <div class="product-card__product">
+                  <picture class="product-card__item">
+                    <source media="(min-width: 1024px)"
+                      srcset="img/reflexion-item-desktop@1x.png 1x, img/reflexion-item-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/reflexion-item-tablet@1x.png 1x, img/reflexion-item-tablet@2x.png 2x">
+                    <img src="img/reflexion-item-mobile@1x.png" alt="Красивое фото" srcset="img/reflexion-item-mobile@2x.png 2x">
+                  </picture>
+                </div>
+                <figcaption class="product-card__info">
+                  <p class="product-card__name product-card__name--detox">Мен</p>
+                  <div class="product-card__flexwrap">
+                    <p class="product-card__price">2900<span class="product-card__lp">25 lp</span></p>
                     <button class="product-card__add-btn" tabindex="0"><span class="product-card__add-text">В корзину</span>
                       <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
@@ -495,7 +694,7 @@
               <p class="iq-boost__description">Сбалансированная и хорошо обученная иммунная система позволяет вам быть здоровыми и отлично себя чувствовать. Трансфер факторы – это молекулы-посредники, которые
                 передают вам иммунные знания из природы! Они оптимальным образом сотрудничают с вашим организмом и
                 борются с потенциальными угрозами здоровью.</p>
-                <a href="tf.html" class="iq-boost__button button">Подробнее</a>
+                <!-- <a href="tf.html" class="iq-boost__button button">Подробнее</a> -->
             </div>
           </div>
           <div class="iq-boost__info tf-faq">
@@ -578,9 +777,9 @@
               <p class="featurebox__title">Полная поддержка от компании</p>
               <p class="featurebox__description">Все расскажем, покажем и поможем.<br>Вы всегда можете получить консультацию, по любым вопросам</p>
             </li>
-            <li class="features__item featurebox featurebox--chat">
-              <p class="featurebox__title">Полная поддержка от компании</p>
-              <p class="featurebox__description">Все расскажем, покажем и поможем.<br>Вы всегда можете получить консультацию, по любым вопросам</p>
+            <li class="features__item featurebox featurebox--patent">
+              <p class="featurebox__title">Патенты и научные исследования</p>
+              <p class="featurebox__description">Получено 5 патентов в США, 38 в других странах и еще десятки ждут одобрения</p>
             </li>
           </ul>
         </div>
@@ -620,6 +819,7 @@
         <p class="footer__nav">Московский офис</p>
         <ul class="footer__list">
           <li class="footer__innerwrap"><p class="footer__item">+7 926 827-78-11</p></li>
+          <li class="footer__innerwrap"><p class="footer__item footer__item--pink">ksenli@mail.ru</p></li>
           <li class="footer__innerwrap"><p class="footer__item">Садово-Cухаревская 2/34 стр. 1,<br>офис 408</p></li>
         </ul>
         <div class="footer__logo">
@@ -637,7 +837,7 @@
     </div>
   </footer>
   <script src="js/tf-faq.js"></script>
-  <script src="js/product-name.js"></script>
+  <!-- <script src="js/product-name.js"></script> -->
   <script src="js/product-card.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>

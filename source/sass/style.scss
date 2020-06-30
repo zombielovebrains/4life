@@ -17,6 +17,9 @@
 @import "blocks/life-rewards.scss";
 @import "blocks/tf-info.scss";
 @import "blocks/contacts.scss";
+@import "blocks/documents.scss";
+@import "blocks/cart.scss";
+@import "blocks/orderlist.scss";
 
 html {
   box-sizing: border-box;
@@ -27,6 +30,7 @@ html {
 *::after {
   box-sizing: inherit;
   transition: 0.2s;
+  outline: none;
 }
 
 body {

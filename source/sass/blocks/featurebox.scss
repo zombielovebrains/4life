@@ -46,6 +46,13 @@
       background-size: contain;
     }
   }
+
+  &--patent {
+    &::before {
+      background: url("../img/patent-icon.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 .featurebox__title {

@@ -1,0 +1,148 @@
+.documents {
+  padding-top: 30px;
+}
+
+.documents__list {
+  padding-top: 30px;
+}
+
+.documents__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  min-height: 75px;
+  background-color: $lightgray;
+  border-radius: 10px;
+
+  padding: 15px 20px;
+}
+
+.documents__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.documents__header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: $fcolor;
+}
+
+
+.documents__title {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $fcolor;
+}
+
+.documents__textblock {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $fcolor;
+  display: block;
+  padding-top: 10px;
+
+  &--link {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: 14px;
+      height: 16px;
+      background-image: url("../img/download-icon.svg");
+      background-size: cover;
+      background-position: center;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .documents {
+    padding-top: 50px;
+  }
+
+  .documents__list {
+    padding-top: 40px;
+  }
+
+  .documents__header {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .documents__item {
+    flex-direction: row;
+    min-height: 85px;
+    padding: 0 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .documents__title {
+    font-size: 18px;
+    line-height: 26px;
+    width: 225px;
+  }
+
+  .documents__textblock {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .documents__header {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .documents__list {
+    padding-top: 60px;
+  }
+
+  .documents__item {
+    min-height: 95px;
+    padding: 0 60px;
+  }
+
+  .documents__title {
+    font-size: 20px;
+    line-height: 28px;
+    width: 250px;
+  }
+
+  .documents__textblock {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .documents__header {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .documents__item {
+    padding: 0 70px;
+  }
+
+  .documents__textblock {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
