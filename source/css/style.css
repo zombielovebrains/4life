@@ -50,11 +50,11 @@
           flex-direction: column;
   border-top: 2px solid #FF689E;
   padding-top: 35px;
-  width: 80%;
+  width: 100%;
   height: calc(100vh - 60px);
   position: fixed;
   top: 60px;
-  right: -80%;
+  right: -100%;
   z-index: 10;
   background-color: #fff;
   visibility: hidden;
