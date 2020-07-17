@@ -11,10 +11,12 @@
       menuBox.classList.remove('main-nav__list--active');
       menuIcon.classList.remove('main-nav__burger--active');
       document.body.classList.remove('hidden');
+      document.documentElement.classList.remove('hidden');
     } else {
       menuBox.classList.add('main-nav__list--active');
       menuIcon.classList.add('main-nav__burger--active');
       document.body.classList.add('hidden');
+      document.documentElement.classList.add('hidden');
     }
   }
 
