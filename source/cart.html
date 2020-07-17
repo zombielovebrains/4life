@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <title>О компании</title>
+  <title>Корзина</title>
 </head>
 
 <body>
@@ -25,22 +25,32 @@
           </a>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__innerbox"><a href="shop.html" class="main-nav__item">Купить</a></li>
-          <li class="main-nav__innerbox"><a href="marketing.html" class="main-nav__item">Бизнес с 4Life</a></li>
           <li class="main-nav__innerbox"><a href="about.html" class="main-nav__item">О компании</a></li>
-          <li class="main-nav__innerbox"><a href="" class="main-nav__item">Доставка</a></li>
-          <li class="main-nav__innerbox"><a href="documents.html" class="main-nav__item">Контакты</a></li>
+          <li class="main-nav__innerbox"><a href="shop.html" class="main-nav__item">Купить</a></li>
+          <li class="main-nav__innerbox"><a href="documents.html" class="main-nav__item">Сертификаты и аннотации</a></li>
+          <li class="main-nav__innerbox"><a href="marketing.html" class="main-nav__item">Бизнес с 4Life</a></li>
+          <li class="main-nav__innerbox"><a href="delivery.html" class="main-nav__item">Доставка</a></li>
+          <li class="main-nav__innerbox"><a href="contacts.html" class="main-nav__item">Контакты</a></li>
+          <li class="main-nav__innerbox main-nav__photo"></li>
         </ul>
         <div class="main-nav__buttonbox">
-          <div class="main-nav__innerbox main-nav__consult"><a href=""
-              class="main-nav__item main-nav__item--stroked">Консультация</a></div>
-          <div class="main-nav__innerbox main-nav__cart"><a href="" class="main-nav__cartbutton"></a><a href=""
-              class="main-nav__item main-nav__item--filled">Корзина</a><span class="main-nav__cart-counter">2</span>
-          </div>
+          <div class="main-nav__cart"><a href="" class="main-nav__cartbutton"></a><a href="cart.html" class="main-nav__item main-nav__item--filled">Корзина</a><span class="main-nav__cart-counter">2</span></div>
+          <button class="main-nav__menu">
+            <div class="main-nav__burger"></div>
+          </button>
         </div>
       </nav>
     </header>
     <main>
+      <section class="modal visually-hidden">
+        <div class="modal__box">
+          <div class="modal__innerwrap">
+            <p class="modal__text">Спасибо за заказ!</p>
+            <p class="modal__text">Наш менеджер свяжется с Вами в скором времени</p>
+            <button class="modal__button button">ОК</button>
+          </div>
+        </div>
+      </section>
       <section class="cart">
         <div class="container">
           <h2 class="cart__header">Корзина</h2>
@@ -55,27 +65,28 @@
                     <label for="fullname" class="visually-hidden">ФИО</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input"  type="tel" name="город" id="phone" placeholder="Номер телефона" required>
+                    <input class="cart__input" type="tel" name="город" id="phone" placeholder="Номер телефона" required>
                     <label for="city" class="visually-hidden">Номер телефона</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input"  type="number" name="квартира" id="id" placeholder="Ваш ID в системе 4Life" required>
+                    <input class="cart__input" type="number" name="квартира" id="id"
+                      placeholder="Ваш ID в системе 4Life" required>
                     <label for="flat" class="visually-hidden">ID в системе</label>
                   </div>
                   <div class="cart__field">
-                    <input class="cart__input"  type="text" name="город" id="city" placeholder="Город" required>
+                    <input class="cart__input" type="text" name="город" id="city" placeholder="Город" required>
                     <label for="city" class="visually-hidden">Город</label>
                   </div>
                   <div class="cart__field">
-                    <input class="cart__input"  type="text" name="улица" id="street" placeholder="Улица" required>
+                    <input class="cart__input" type="text" name="улица" id="street" placeholder="Улица" required>
                     <label for="street" class="visually-hidden">Улица</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input"  type="text" name="дом" id="house" placeholder="Дом" required>
+                    <input class="cart__input" type="text" name="дом" id="house" placeholder="Дом" required>
                     <label for="house" class="visually-hidden">Дом</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input"  type="number" name="квартира" id="flat" placeholder="Квартира" required>
+                    <input class="cart__input" type="number" name="квартира" id="flat" placeholder="Квартира" required>
                     <label for="flat" class="visually-hidden">Квартира</label>
                   </div>
                 </div>
@@ -92,14 +103,17 @@
                       <p class="orderlist__name">Энерджи Гоу Стикс</p>
                       <div class="orderlist__count-btns">
                         <button class="orderlist__minus-btn" type="button">
-                          <svg class="orderlist__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                          <svg class="orderlist__minus" width="12" height="2" viewBox="0 0 12 2" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1H6H1" stroke-width="2" stroke-linecap="round" />
+                          </svg>
                         </button>
                         <input class="orderlist__count-field" type="number" value="1" max="999"></input>
                         <button type="button" class="orderlist__plus-btn">
-                          <svg class="orderlist__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
-                            <path class="orderlist__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                          <svg class="orderlist__plus" width="10" height="10" viewBox="0 0 12 12"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="orderlist__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2"
+                              stroke-linecap="round" />
                           </svg>
                         </button>
                       </div>
@@ -114,14 +128,17 @@
                       <p class="orderlist__name">Энерджи Гоу Стикс</p>
                       <div class="orderlist__count-btns">
                         <button class="orderlist__minus-btn" type="button">
-                          <svg class="orderlist__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                          <svg class="orderlist__minus" width="12" height="2" viewBox="0 0 12 2" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1H6H1" stroke-width="2" stroke-linecap="round" />
+                          </svg>
                         </button>
                         <input class="orderlist__count-field" type="number" value="1" max="999"></input>
                         <button type="button" class="orderlist__plus-btn">
-                          <svg class="orderlist__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
-                            <path class="orderlist__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
+                          <svg class="orderlist__plus" width="10" height="10" viewBox="0 0 12 12"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="orderlist__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2"
+                              stroke-linecap="round" />
                           </svg>
                         </button>
                       </div>
@@ -133,8 +150,14 @@
             </div>
             <div class="cart__rightcol">
               <div class="cart__total">
-                <div class="cart__textrow"><p class="cart__text cart__text--key cart__text--bold">Итого:</p><p class="cart__text cart__text--bold">2500</p></div>
-                <div class="cart__textrow"><p class="cart__text cart__text--key">LP:</p><p class="cart__text">55</p></div>
+                <div class="cart__textrow">
+                  <p class="cart__text cart__text--key cart__text--bold">Итого:</p>
+                  <p class="cart__text cart__text--bold">2500</p>
+                </div>
+                <div class="cart__textrow">
+                  <p class="cart__text cart__text--key">LP:</p>
+                  <p class="cart__text">55</p>
+                </div>
                 <button type="submit" class="cart__button button">Отправить заказ</button>
               </div>
             </div>
@@ -143,7 +166,7 @@
       </section>
     </main>
   </div>
-  <footer class = "footer">
+  <footer class="footer">
     <div class="container footer__flexwrap">
       <div class="footer__column">
         <p class="footer__nav">Помощь</p>
@@ -172,9 +195,15 @@
       <div class="footer__column">
         <p class="footer__nav">Московский офис</p>
         <ul class="footer__list">
-          <li class="footer__innerwrap"><p class="footer__item">+7 926 827-78-11</p></li>
-          <li class="footer__innerwrap"><p class="footer__item">ksenli@mail.ru</p></li>
-          <li class="footer__innerwrap"><p class="footer__item">Садово-Cухаревская 2/34 стр. 1,<br>офис 408</p></li>
+          <li class="footer__innerwrap">
+            <p class="footer__item">+7 926 827-78-11</p>
+          </li>
+          <li class="footer__innerwrap">
+            <p class="footer__item">ksenli@mail.ru</p>
+          </li>
+          <li class="footer__innerwrap">
+            <p class="footer__item">Садово-Cухаревская 2/34 стр. 1,<br>офис 408</p>
+          </li>
         </ul>
         <div class="footer__logo">
           <a href="index.html">
@@ -193,5 +222,7 @@
     </div>
   </footer>
   <script src="js/phonemask.js"></script>
+  <script src="js/menu.js"></script>
 </body>
+
 </html>

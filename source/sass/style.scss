@@ -20,6 +20,7 @@
 @import "blocks/documents.scss";
 @import "blocks/cart.scss";
 @import "blocks/orderlist.scss";
+@import "blocks/modal.scss";
 
 html {
   box-sizing: border-box;
@@ -35,6 +36,10 @@ html {
 
 body {
   min-width: 320px;
+}
+
+.hidden {
+  overflow-y: hidden;
 }
 
 ul {
