@@ -74,6 +74,27 @@ input[type='number'] {
     -moz-appearance: textfield;
 }
 
+.up-btn {
+  display: flex;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $pink;
+  opacity: 0.3;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 9px;
+    background: url("../img/up-icon.svg") center no-repeat;
+    margin: auto;
+  }
+}
+
 .button {
   height: 40px;
 
@@ -161,6 +182,20 @@ input[type='number'] {
       width: 18px;
       height: 18px;
       margin-top: -9px;
+    }
+  }
+
+  .up-btn {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    right: 20px;
+    bottom: 20px;
+
+    &::after {
+      content: "";
+      width: 22px;
+      height: 11px;
     }
   }
 }

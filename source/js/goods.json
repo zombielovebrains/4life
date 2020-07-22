@@ -1,0 +1,92 @@
+{
+  "50524070": {
+    "name": "ТФ Трай-Фактор",
+    "cost": "3310",
+    "lp": "35",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50524075": {
+    "name": "ТФ Плюс",
+    "cost": "4330",
+    "lp": "50",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50524085": {
+    "name": "ТФ Классик",
+    "cost": "3210",
+    "lp": "34",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50521002": {
+    "name": "Кардио",
+    "cost": "4130",
+    "lp": "46",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50527577": {
+    "name": "ПРО-ТФ шоколад",
+    "cost": "5250",
+    "lp": "25",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50527568": {
+    "name": "ПРО-ТФ ваниль",
+    "cost": "5250",
+    "lp": "25",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50529001": {
+    "name": "Глюкоуч",
+    "cost": "4130",
+    "lp": "46",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50523015": {
+    "name": "Супер Детокс",
+    "cost": "2170",
+    "lp": "20",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50522535": {
+    "name": "Белл Ви",
+    "cost": "4030",
+    "lp": "40",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50522003": {
+    "name": "Реколл",
+    "cost": "4210",
+    "lp": "40",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50527563": {
+    "name": "Энерджи Гоу Стикс",
+    "cost": "3210",
+    "lp": "34",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50527585": {
+    "name": "Берн",
+    "cost": "4210",
+    "lp": "35",
+    "image": "reflexion-item-desktop@2x.png"
+  },
+
+  "50526535": {
+    "name": "Мен",
+    "cost": "2900",
+    "lp": "25",
+    "image": "reflexion-item-desktop@2x.png"
+  }
+}

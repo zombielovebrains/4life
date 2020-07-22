@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+.product-card__item {
+  width: 154px;
+}
+
 .product-card__product {
   min-height: 210px;
   display: flex;
@@ -204,6 +208,10 @@ path {
     min-height: 465px;
   }
 
+  .product-card__item {
+    width: 198px;
+  }
+
   .product-card__product {
     min-height: 284px;
   }
@@ -272,6 +280,10 @@ path {
   .product-card {
     width: 360px;
     min-height: 555px;
+  }
+
+  .product-card__item {
+    width: 231px;
   }
 
   .product-card__product {
