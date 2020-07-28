@@ -52,7 +52,15 @@
           </div>
         </div>
       </section>
-      <section class="cart">
+      <section class="empty-cart">
+        <div class="container">
+          <div class="empty-cart__flexwrap">
+            <p class="empty-cart__message">В вашей корзине пока нет товаров</p>
+            <a href="shop.html" class="empty-cart__button button">Перейти в каталог</a>
+          </div>
+        </div>
+      </section>
+      <section class="cart visually-hidden">
         <div class="container">
           <h2 class="cart__header">Корзина</h2>
           <form action="" method="post" class="cart__form">
@@ -95,69 +103,18 @@
               <fieldset class="cart__fieldset">
                 <legend>Список товаров</legend>
                 <p class="cart__title">Заказ</p>
-                <ul class="cart__list orderlist">
-                  <li class="orderlist__item">
-                    <div class="orderlist__photobox">
-                      <img src="img/reflexion-item-desktop@1x.png" alt="" class="orderlist__photo">
-                    </div>
-                    <div class="orderlist__info">
-                      <p class="orderlist__name">Энерджи Гоу Стикс</p>
-                      <div class="orderlist__count-btns">
-                        <button class="orderlist__minus-btn" type="button">
-                          <svg class="orderlist__minus" width="12" height="2" viewBox="0 0 12 2" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1H6H1" stroke-width="2" stroke-linecap="round" />
-                          </svg>
-                        </button>
-                        <input class="orderlist__count-field" type="number" value="1" max="999"></input>
-                        <button type="button" class="orderlist__plus-btn">
-                          <svg class="orderlist__plus" width="10" height="10" viewBox="0 0 12 12"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="orderlist__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2"
-                              stroke-linecap="round" />
-                          </svg>
-                        </button>
-                      </div>
-                      <p class="orderlist__price">2900<span class="orderlist__lp">25 lp</span></p>
-                    </div>
-                  </li>
-                  <li class="orderlist__item">
-                    <div class="orderlist__photobox">
-                      <img src="img/reflexion-item-desktop@1x.png" alt="" class="orderlist__photo">
-                    </div>
-                    <div class="orderlist__info">
-                      <p class="orderlist__name">Энерджи Гоу Стикс</p>
-                      <div class="orderlist__count-btns">
-                        <button class="orderlist__minus-btn" type="button">
-                          <svg class="orderlist__minus" width="12" height="2" viewBox="0 0 12 2" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1H6H1" stroke-width="2" stroke-linecap="round" />
-                          </svg>
-                        </button>
-                        <input class="orderlist__count-field" type="number" value="1" max="999"></input>
-                        <button type="button" class="orderlist__plus-btn">
-                          <svg class="orderlist__plus" width="10" height="10" viewBox="0 0 12 12"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="orderlist__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2"
-                              stroke-linecap="round" />
-                          </svg>
-                        </button>
-                      </div>
-                      <p class="orderlist__price">2900<span class="orderlist__lp">25 lp</span></p>
-                    </div>
-                  </li>
-                </ul>
+                <ul class="cart__list orderlist"></ul>
               </fieldset>
             </div>
             <div class="cart__rightcol">
               <div class="cart__total">
                 <div class="cart__textrow">
                   <p class="cart__text cart__text--key cart__text--bold">Итого:</p>
-                  <p class="cart__text cart__text--bold">2500</p>
+                  <p class="cart__text cart__text--bold total-amount">2500</p>
                 </div>
                 <div class="cart__textrow">
                   <p class="cart__text cart__text--key">LP:</p>
-                  <p class="cart__text">55</p>
+                  <p class="cart__text total-lp">55</p>
                 </div>
                 <button type="submit" class="cart__button button">Отправить заказ</button>
               </div>
@@ -210,10 +167,41 @@
       </div>
     </div>
   </footer>
+
+  <template id="cart">
+    <li class="orderlist__item">
+      <div class="orderlist__photobox">
+        <img src="img/reflexion-item-desktop@1x.png" alt="" class="orderlist__photo">
+      </div>
+      <div class="orderlist__info">
+        <input class="orderlist__name" value="" readonly></input>
+        <div class="orderlist__count-btns">
+          <button class="orderlist__minus-btn" type="button">
+            <svg class="orderlist__minus block-events" width="12" height="2" viewBox="0 0 12 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="block-events" d="M11 1H6H1" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+          <input class="orderlist__count-field" type="number" value="1" max="999"></input>
+          <button type="button" class="orderlist__plus-btn">
+            <svg class="orderlist__plus block-events" width="10" height="10" viewBox="0 0 12 12"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="orderlist__path-plus block-events" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+        <p class="orderlist__price"><span class="orderlist__sum">2900</span><span class="orderlist__lp">25 lp</span></p>
+      </div>
+    </li>
+  </template>
+
   <script src="js/phonemask.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/server.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>

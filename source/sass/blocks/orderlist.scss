@@ -26,6 +26,8 @@
   font-size: 16px;
   line-height: 24px;
   color: $fcolor;
+  border:none;
+  background-color: transparent;
 }
 
 .orderlist__price {
@@ -144,8 +146,15 @@
   .orderlist__price {
     font-size: 18px;
     line-height: 26px;
+    min-width: 130px;
+
+    display: flex;
 
     margin: 0;
+  }
+
+  .orderlist__sum {
+    margin-left: auto;
   }
 
   .orderlist__lp {

@@ -2660,7 +2660,9 @@ path {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #17181A; }
+  color: #17181A;
+  border: none;
+  background-color: transparent; }
 
 .orderlist__price {
   font-family: "Lato", arial, sans-serif;
@@ -2782,7 +2784,13 @@ path {
   .orderlist__price {
     font-size: 18px;
     line-height: 26px;
+    min-width: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0; }
+  .orderlist__sum {
+    margin-left: auto; }
   .orderlist__lp {
     font-size: 16px;
     line-height: 24px; }
@@ -2871,6 +2879,62 @@ path {
     padding-top: 50px;
     padding-bottom: 50px; } }
 
+.empty-cart {
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.empty-cart__message {
+  font-family: "Lato", arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #5B6268; }
+
+.empty-cart__button {
+  margin-top: 30px; }
+
+.empty-cart__flexwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media (min-width: 768px) {
+  .empty-cart {
+    padding-top: 100px; }
+  .empty-cart__message {
+    font-size: 33px;
+    line-height: 48px; } }
+
+@media (min-width: 1024px) {
+  .empty-cart__message {
+    font-size: 40px;
+    line-height: 58px; }
+  .empty-cart__button {
+    margin-top: 40px; } }
+
+@media (min-width: 1200px) {
+  .empty-cart__message {
+    font-size: 50px;
+    line-height: 68px; } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -2889,6 +2953,9 @@ body {
 
 .hidden {
   overflow-y: hidden; }
+
+.block-events {
+  pointer-events: none; }
 
 ul {
   list-style-type: none;

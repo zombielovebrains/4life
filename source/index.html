@@ -121,7 +121,7 @@
         <div class="container">
           <h2 class="products__header">Продукты<br>компании <span class="underlined-text">4Life</span></h2>
           <div class="products__flexwrap">
-            <ul class="products__filterset">
+            <ul class="products__filterset visually-hidden">
               <li class="products__filter"><a href="" class="products__link products__link--active">Все продукты</a></li>
               <li class="products__filter"><a href="" class="products__link">Иммунитет</a></li>
               <li class="products__filter"><a href="" class="products__link">Целенаправленные ТФ</a></li>
@@ -132,8 +132,7 @@
               <button type="button" class="products__toggle products__toggle--next owl-next"></button>
             </div>
           </div>
-          <ul class="products__list">
-          </ul>
+          <ul class="products__list"></ul>
           <a href="shop.html" class="products__button button button--large">Все продукты</a>
         </div>
       </section>
@@ -334,20 +333,20 @@
           <p class="product-card__name"></p>
           <div class="product-card__flexwrap">
             <p class="product-card__price"><span class="product-card__lp"></span></p>
-            <button class="product-card__add-btn" tabindex="0" data-id=""><span class="product-card__add-text">В корзину</span>
-              <svg class="product-card__plus-icon" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+            <button class="product-card__add-btn product-card__add" tabindex="0" data-id=""><span class="product-card__add-text block-events">В корзину</span>
+              <svg class="product-card__plus-icon block-events" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </button>
             <div class="product-card__count-btns">
               <button class="product-card__minus-btn" type="button" data-id="">
-                <svg class="product-card__minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="product-card__minus block-events" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1H6H1"  stroke-width="2" stroke-linecap="round"/>
                   </svg>
               </button>
               <input class="product-card__count-field" type="number" value="0" max="999"></input>
-              <button type="button" class="product-card__plus-btn" data-id="">
-                <svg class="product-card__plus" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+              <button type="button" class="product-card__plus-btn product-card__add" data-id="">
+                <svg class="product-card__plus block-events" width="10" height="10" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
                   <path class="product-card__path-plus" d="M6 1V6M6 11V6M6 6H11M6 6H1" stroke-width="2" stroke-linecap="round"/>
                 </svg>
               </button>
@@ -359,15 +358,14 @@
     </li>
   </template>
 
-  <script src="js/tf-faq.js"></script>
-  <!-- <script src="js/product-name.js"></script> -->
-  <script src="js/product-card.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/scroll.js"></script>
   <script src="js/server.js"></script>
-  <script src="js/card.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/card.js"></script>
+  <script src="js/tf-faq.js"></script>
+  <script src="js/product-card.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
