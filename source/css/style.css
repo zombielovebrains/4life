@@ -2963,7 +2963,8 @@ ul {
   margin: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 p {
   margin: 0; }
@@ -2971,7 +2972,8 @@ p {
 button {
   background-color: transparent;
   border-style: none;
-  outline-color: transparent; }
+  outline-color: transparent;
+  cursor: pointer; }
 
 h2 {
   margin: 0; }

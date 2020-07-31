@@ -7,14 +7,9 @@
 
   let productsList = document.querySelector('.products__list');
 
-  $('document').ready(function () {
-    checkCart();
-  });
-
-  // window.addEventListener("onload",function() {
-  //   console.log('я сделал');
+  // $('document').ready(function () {
   //   checkCart();
-  //  });
+  // });
 
   function hideCountBtns (target) {
     let addBtn = target.querySelector('.product-card__add-btn');
@@ -57,7 +52,6 @@
 
   function checkCountField () {
     let productCards = document.querySelectorAll('.products__item');
-
 
     productCards.forEach(function (item) {
       let countField = item.querySelector('.product-card__count-field');
@@ -126,5 +120,9 @@
         plusIcons[i].classList.add('product-card__plus-icon--pink');
       });
     });
+
+    window.productCard = {
+      check: checkCart
+    };
   }
 })();

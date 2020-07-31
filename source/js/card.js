@@ -11,6 +11,7 @@
       similarCardList.appendChild(createCard(cardList[key], key));
     }
 
+    window.productCard.check();
     window.slider.activate();
   };
 

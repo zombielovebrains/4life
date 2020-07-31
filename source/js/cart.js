@@ -69,6 +69,9 @@
   function changeCart (countField) {
     let article  = countField.dataset.id;
     cart[article] = parseInt(countField.value);
+    if (cart[article] === 0) {
+      delete cart[article];
+    }
   }
 
 
