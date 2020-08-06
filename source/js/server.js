@@ -3,7 +3,7 @@
 
   const TIMEOUT_IN_MS = 10000;
   const SERVER_DATA_URL = 'js/goods.json';
-  const SERVER_URL = 'https://js.dump.academy/keksobooking';
+  const SERVER_URL = '../php/send.php';
   const StatusCode = {
     OK: 200
   };
@@ -41,7 +41,7 @@
 
   var upload = function (data, onSuccess) {
     var xhr = createRequest(onSuccess);
-    xhr.open('POST');
+    xhr.open('POST', SERVER_URL);
     xhr.send(data);
   };
 

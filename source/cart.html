@@ -63,7 +63,7 @@
       <section class="cart visually-hidden">
         <div class="container">
           <h2 class="cart__header">Корзина</h2>
-          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'php/send.php')" class="cart__form">
+          <form enctype="multipart/form-data" method="post" id="form"  class="cart__form">
             <div class="cart__leftcol">
               <fieldset class="cart__fieldset">
                 <legend>Контактная информация</legend>
@@ -199,7 +199,7 @@
       </div>
     </li>
   </template>
-  <script>
+  <!-- <script>
     // Отправка данных на сервер
     function send(event, php){
     console.log("Отправка запроса");
@@ -226,7 +226,7 @@
     req.onerror = function() {alert("Ошибка отправки запроса");};
     req.send(new FormData(event.target));
     }
-    </script>
+    </script> -->
   <script src="js/phonemask.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/scroll.js"></script>

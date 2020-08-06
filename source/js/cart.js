@@ -160,10 +160,10 @@
     }
   });
 
-  // orderlistForm.addEventListener('submit', function (evt) {
-  //   window.server.upload(new FormData(orderlistForm), successSubmit);
-  //   evt.preventDefault();
-  // });
+  orderlistForm.addEventListener('submit', function (evt) {
+    window.server.upload(new FormData(orderlistForm), successSubmit);
+    evt.preventDefault();
+  });
 
   window.server.download(loadOrderItems);
 
