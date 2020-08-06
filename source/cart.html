@@ -63,39 +63,43 @@
       <section class="cart visually-hidden">
         <div class="container">
           <h2 class="cart__header">Корзина</h2>
-          <form action="" method="post" class="cart__form">
+          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')" class="cart__form">
             <div class="cart__leftcol">
               <fieldset class="cart__fieldset">
                 <legend>Контактная информация</legend>
                 <p class="cart__title">Данные получателя</p>
                 <div class="cart__flexwrap">
                   <div class="cart__field">
-                    <input class="cart__input" type="text" name="ФИО" id="fullname" placeholder="ФИО" required>
+                    <input class="cart__input" type="text" name="fio" id="fullname" placeholder="ФИО" required>
                     <label for="fullname" class="visually-hidden">ФИО</label>
                   </div>
+                  <div class="cart__field">
+                    <input class="cart__input" type="email" name="email" id="email" placeholder="Электронная почта" required>
+                    <label for="fullname" class="visually-hidden">Email</label>
+                  </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input" type="tel" name="город" id="phone" placeholder="Номер телефона" required>
+                    <input class="cart__input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required>
                     <label for="city" class="visually-hidden">Номер телефона</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input" type="number" name="квартира" id="id"
+                    <input class="cart__input" type="number" name="id" id="id"
                       placeholder="Ваш ID в системе 4Life" required>
                     <label for="flat" class="visually-hidden">ID в системе</label>
                   </div>
                   <div class="cart__field">
-                    <input class="cart__input" type="text" name="город" id="city" placeholder="Город" required>
+                    <input class="cart__input" type="text" name="city" id="city" placeholder="Город" required>
                     <label for="city" class="visually-hidden">Город</label>
                   </div>
                   <div class="cart__field">
-                    <input class="cart__input" type="text" name="улица" id="street" placeholder="Улица" required>
+                    <input class="cart__input" type="text" name="street" id="street" placeholder="Улица" required>
                     <label for="street" class="visually-hidden">Улица</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input" type="text" name="дом" id="house" placeholder="Дом" required>
+                    <input class="cart__input" type="text" name="house" id="house" placeholder="Дом" required>
                     <label for="house" class="visually-hidden">Дом</label>
                   </div>
                   <div class="cart__field cart__field--halfwidth">
-                    <input class="cart__input" type="number" name="квартира" id="flat" placeholder="Квартира" required>
+                    <input class="cart__input" type="number" name="flat" id="flat" placeholder="Квартира" required>
                     <label for="flat" class="visually-hidden">Квартира</label>
                   </div>
                 </div>
@@ -174,7 +178,7 @@
         <img src="img/reflexion-item-desktop@1x.png" alt="" class="orderlist__photo">
       </div>
       <div class="orderlist__info">
-        <input class="orderlist__name" value="" readonly></input>
+        <input class="orderlist__name" name="product" value="" readonly></input>
         <div class="orderlist__count-btns">
           <button class="orderlist__minus-btn" type="button">
             <svg class="orderlist__minus block-events" width="12" height="2" viewBox="0 0 12 2" fill="none"
@@ -182,7 +186,7 @@
               <path class="block-events" d="M11 1H6H1" stroke-width="2" stroke-linecap="round" />
             </svg>
           </button>
-          <input class="orderlist__count-field" type="number" value="1" max="999"></input>
+          <input class="orderlist__count-field" name="product-count" type="number" value="1" max="999"></input>
           <button type="button" class="orderlist__plus-btn">
             <svg class="orderlist__plus block-events" width="10" height="10" viewBox="0 0 12 12"
               xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +199,34 @@
       </div>
     </li>
   </template>
+  <script>
+    // Отправка данных на сервер
+    function send(event, php){
+    console.log("Отправка запроса");
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
+    var req = new XMLHttpRequest();
+    req.open('POST', php, true);
+    req.onload = function() {
+      if (req.status >= 200 && req.status < 400) {
+      json = JSON.parse(this.response); // Ебанный internet explorer 11
+          console.log(json);
 
+          // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+          if (json.result == "success") {
+            // Если сообщение отправлено
+            alert("Сообщение отправлено");
+          } else {
+            // Если произошла ошибка
+            alert("Ошибка. Сообщение не отправлено");
+          }
+        // Если не удалось связаться с php файлом
+        } else {alert("Ошибка сервера. Номер: "+req.status);}};
+
+    // Если не удалось отправить запрос. Стоит блок на хостинге
+    req.onerror = function() {alert("Ошибка отправки запроса");};
+    req.send(new FormData(event.target));
+    }
+    </script>
   <script src="js/phonemask.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/scroll.js"></script>

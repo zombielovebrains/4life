@@ -39,8 +39,16 @@
     xhr.send();
   };
 
+  var upload = function (data, onSuccess) {
+    var xhr = createRequest(onSuccess);
+    xhr.open('POST');
+    xhr.send(data);
+  };
+
+
   window.server = {
-    download: download
+    download: download,
+    upload: upload
   };
 })();
 

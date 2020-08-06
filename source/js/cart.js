@@ -7,8 +7,26 @@
   let similarOrderlist = document.querySelector('.orderlist');
   let totalAmountField = document.querySelector('.total-amount');
   let totalLpField = document.querySelector('.total-lp');
+  let orderlistForm = document.querySelector('.cart__form');
+  let modal = document.querySelector('.modal');
+  let closeModalBtn = document.querySelector('.modal__button');
 
   checkCart();
+
+  function checkModal() {
+    if (modal.classList.contains('visually-hidden')) {
+      modal.classList.remove('visually-hidden');
+    } else {
+      modal.classList.add('visually-hidden');
+    }
+  }
+
+  function successSubmit() {
+    hideCart();
+    clearLocalStorage();
+    clearAllItems();
+    checkModal();
+  }
 
   function showCart() {
     document.querySelector('.empty-cart').classList.add('visually-hidden');
@@ -21,7 +39,7 @@
   }
 
   function checkCart() {
-    if (localStorage.getItem('cart') != null ) {
+    if (localStorage.getItem('cart') != null && Object.keys(JSON.parse(localStorage.getItem('cart'))).length != 0) {
       cart = JSON.parse(localStorage.getItem('cart'));
       showCart();
     } else {
@@ -79,6 +97,10 @@
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 
+  function clearLocalStorage() {
+    localStorage.clear();
+  }
+
   function clearAllItems(parent) {
     parent.textContent = '';
   }
@@ -129,12 +151,19 @@
     return card;
   };
 
+  closeModalBtn.addEventListener('click', checkModal);
+
   similarOrderlist.addEventListener('change', function (evt) {
     if (evt.target.classList.contains('orderlist__count-field')) {
       changeCart(evt.target);
       checkCountField();
     }
   });
+
+  // orderlistForm.addEventListener('submit', function (evt) {
+  //   window.server.upload(new FormData(orderlistForm), successSubmit);
+  //   evt.preventDefault();
+  // });
 
   window.server.download(loadOrderItems);
 
