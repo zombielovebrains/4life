@@ -3,7 +3,7 @@
 
   const TIMEOUT_IN_MS = 10000;
   const SERVER_DATA_URL = 'js/goods.json';
-  const SERVER_URL = '../php/send.php';
+  const SERVER_URL = 'source/php/send.php';
   const StatusCode = {
     OK: 200
   };
