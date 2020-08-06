@@ -37,8 +37,8 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'tf.immun'; // Логин на почте
+    $mail->Host       = 'ssl://smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'tf.immun@gmail.com'; // Логин на почте
     $mail->Password   = 'cjmfgyhf396'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
