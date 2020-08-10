@@ -16,15 +16,18 @@
   function checkModal() {
     if (modal.classList.contains('visually-hidden')) {
       modal.classList.remove('visually-hidden');
+      modal.querySelector('.modal__box').classList.remove('modal__box-hidden');
+      document.body.classList.add('lock');
     } else {
+      modal.querySelector('.modal__box').classList.add('modal__box-hidden');
       modal.classList.add('visually-hidden');
+      document.body.classList.remove('lock');
     }
   }
 
   function successSubmit() {
     hideCart();
     clearLocalStorage();
-    clearAllItems();
     checkModal();
   }
 

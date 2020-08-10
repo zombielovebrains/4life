@@ -21,7 +21,6 @@
   bottom: 0;
   right: -100%;
   z-index: 10;
-  background-color: #fff;
   padding-top: 20px;
 
   visibility: hidden;
@@ -79,7 +78,7 @@
   line-height: 20px;
   color: $fcolor;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }

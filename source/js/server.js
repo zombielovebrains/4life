@@ -40,9 +40,11 @@
   };
 
   var upload = function (data, onSuccess) {
+
     var xhr = createRequest(onSuccess);
     xhr.open('POST', SERVER_URL);
     xhr.send(data);
+    console.log('выполнил запрос');
   };
 
 
