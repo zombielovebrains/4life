@@ -1,9 +1,1 @@
-<svg width="800" height="422" viewBox="0 0 800 422" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line y1="421.5" x2="800" y2="421.5" stroke="#DCEDF8"/>
-<line y1="350.5" x2="800" y2="350.5" stroke="#DCEDF8"/>
-<line y1="280.5" x2="800" y2="280.5" stroke="#DCEDF8"/>
-<line y1="210.5" x2="800" y2="210.5" stroke="#DCEDF8"/>
-<line y1="140.5" x2="800" y2="140.5" stroke="#DCEDF8"/>
-<line y1="70.5" x2="800" y2="70.5" stroke="#DCEDF8"/>
-<line y1="0.5" x2="800" y2="0.5" stroke="#DCEDF8"/>
-</svg>
+<svg width="800" height="422" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#DCEDF8" d="M0 421.5h800m-800-71h800m-800-70h800m-800-70h800m-800-70h800M0 70.5h800M0 .5h800"/></svg>
