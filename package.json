@@ -4,7 +4,7 @@
   "description": "Портфолио сайт о трансфер факторе",
   "devDependencies": {
     "autoprefixer": "^9.7.5",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.13",
     "editorconfig-cli": "^0.3.0",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
