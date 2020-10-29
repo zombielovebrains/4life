@@ -121,7 +121,7 @@
       });
     });
 
-    window.productCard = {
+    window.cardOfProduct = {
       check: checkCart
     };
   }

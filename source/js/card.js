@@ -11,8 +11,10 @@
       similarCardList.appendChild(createCard(cardList[key], key));
     }
 
-    window.productCard.check();
-    window.slider.activate();
+    window.cardOfProduct.check();
+    try {
+      window.slider.activate();
+    } catch (e) {}
   };
 
   let createCard = function (data, id) { // Заполняем шаблон объявления данными из объекта
