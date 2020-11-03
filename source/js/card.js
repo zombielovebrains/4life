@@ -14,7 +14,9 @@
     window.cardOfProduct.check();
     try {
       window.slider.activate();
-    } catch (e) {}
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   let createCard = function (data, id) { // Заполняем шаблон объявления данными из объекта

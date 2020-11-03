@@ -10,7 +10,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 
-var imagemin = require("gulp-imagemin");
+// var imagemin = require("gulp-imagemin");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 
@@ -23,7 +23,9 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico"
+    "source/*.ico",
+    "source/css/normalize.css",
+    "source/css/owl.carousel.css"
   ], {
     base: "source"
   })
@@ -45,15 +47,15 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 5}),
-    imagemin.mozjpeg({quality: 70, progressive: true}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("source/img"));
-});
+// gulp.task("images", function() {
+//   return gulp.src("source/img/**/*.{png,jpg,svg}")
+//   .pipe(imagemin([
+//     imagemin.optipng({optimizationLevel: 5}),
+//     imagemin.mozjpeg({quality: 70, progressive: true}),
+//     imagemin.svgo()
+//   ]))
+//   .pipe(gulp.dest("source/img"));
+// });
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -76,9 +78,9 @@ gulp.task("server", function () {
 
 gulp.task("refresh", function () {
 server.reload();
-done();
+// done();
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "images", "css", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "html"));
 gulp.task("start", gulp.series("build"));
